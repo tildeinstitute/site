@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Tilde Institute for OpenBSD Education</title>
+        <link rel="stylesheet" href="tilde.css" type="text/css"/>
+        <link rel="icon" type="image/png" href="icon.png"/>
+</head>
+<body>
+<div id="container">
+	<div id="logo">
+        <img src="logo.png" alt="" /><br />
+		<div id="logobyline">
+			of OpenBSD Education
+		</div>
+	</div>         
+	<div id="navigation">
+        <a href="http://tilde.institute">News</a> :: <a href="signup.php">Sign Up</a> :: <a href="start.html">Quick-Start Guide</a> :: <a href="coc.html">Code of Conduct</a> :: <a href="https://tilde.zone/@tildeinstitute">Mastodon</a>
+	</div>
+	<div id="content">
+		<p>Welcome to the Tilde Institute! This is an OpenBSD machine whose purpose is to provide a space in the <a href="https://tildeverse.org">tildeverse</a> for experimentation with and education of the OpenBSD operating system. A variety of editors, shells, and compilers are installed to allow for development in a native OpenBSD environment. OpenBSD's httpd(8) is configured so that each user gets their own subdomain, with slowcgi(8) as the fastcgi provider and sqlite3 available. This allows users to experiment with web development using compiled CGI, aka the <a href="https://learnbchs.org">BCHS Stack</a>. Compiled CGI works best with the C programming language.</p>
+        <p>The list of compilers available are as follows:</p>
+			<ul>
+				<li>clang 6.0.0 (C/C++)</li>
+				<li>Rust 1.29.2</li>
+				<li>Go 1.11</li>
+                <li>ghc 8.2.2 (haskell)</li>
+                <li>nasm 2.13.03 &amp; yasm 1.3.0</li>
+			</ul>
+            <p>We also provide non-HTTP access to various interpreted languages as well:</p>
+            <ul>
+                <li>python (2.7 &amp; 3.6)</li>
+                <li>ruby 2.5</li>
+                <li>perl 5.24</li>
+            </ul>
+		<p>In addition to HTTP access to php-7.0. The http daemon will look for index.html by default, however, if you'd like to have that changed, please contact ahriman on either the <a href="https://tilde.town">tilde.town</a> or <a href="https://tilde.chat">tildeverse</a> IRC networks.</p>
+            <p>Your interactive shell can be changed with the chsh command. The shells available:</p>
+            <ul>
+                <li>/bin/ksh (default)</li>
+                <li>/bin/sh</li>
+                <li>/bin/csh</li>
+                <li>/usr/local/bin/bash</li>
+                <li>/usr/local/bin/dash</li>
+                <li>/usr/local/bin/zsh</li>
+                <li>/usr/local/bin/fish</li>
+                <li>/usr/local/bin/tcsh</li>
+            </ul>
+        <p>Feel free to contact ahriman on either the <a href="https://tilde.town">tilde.town</a> or the <a href="https://tilde.team">tilde.team</a> IRC networks if you need another compiler or shell available.</p>
+        <div id="news">
+            <h1>News &amp; Updates</h1>
+		<em>2018 November 23</em>
+		<p>The migration is in progress. I estimate the beta testing phase to begin either late this evening US/NY time, or tomorrow afternoon.</p>
+            <em>2018 November 20</em>
+            <p>I've almost completed the initial setup. Starting tomorrow, I'll begin the migration to a proper VPS at Hetzner. After the migration is complete and I verify everything is working correctly, the beta phase will begin. At that point, registration will be open to tilde.town and tilde.team members. After extensive testing, when I have all the kinks smoothed out, I will begin accepting registrations from non-town/team users and allow members of the general public to enjoy this service. Here's to hoping the beta phase completes quickly and I don't run into any problems.</p>
+        </div>
+	</div>
+</div>
+</body>
+</html>
