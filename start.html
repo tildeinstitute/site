@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Tilde Institute for OpenBSD Education</title>
+        <link rel="stylesheet" href="tilde.css" type="text/css"/>
+        <link rel="icon" type="image/png" href="icon.png"/>
+</head>
+<body>
+<div id="container">
+	<div id="logo">
+        <img src="logo.png" alt="" /><br />
+		<div id="logobyline">
+			of OpenBSD Education
+		</div>
+	</div>         
+	<div id="navigation">
+        <a href="http://tilde.institute">News</a> :: <a href="signup.php">Sign Up</a> :: <a href="start.html">Quick-Start Guide</a> :: <a href="coc.html">Code of Conduct</a> :: <a href="https://tilde.zone/@tildeinstitute">Mastodon</a>
+	</div>
+	<div id="content">
+        <p>This will be a quick-and-dirty guide to getting started with the BCHS stack. It will pertain to using C specifically, however, if you develop in another language, the general information regarding static compilation will apply as well. More C-specific information can be found at:</p>
+            <ul>
+                <li><a href="https://learnbchs.org">Learn BCHS</a></li>
+                <li><a href="http://man.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man2/pledge.2">pledge(2)</a></li>
+                <li><a href="http://man.openbsd.org/unveil.2">unveil(2)</a></li>
+                <li><a href="https://kristaps.bsd.lv/kcgi/">kcgi</a></li>
+                <li><a href="https://kristaps.bsd.lv/ksql/">ksql</a></li>
+                <li><a href="https://kristaps.bsd.lv/kwebapp">kwebapp</a></li>
+            </ul>
+            <p>tilde.institute is set up to process all files with the .cgi extension via slowcgi(8). This allows for a multitude of possibilities - any compiled language can be used to develop web applications on an OpenBSD server. It's advised to use C because of the pledge(2) and unveil(2) system calls available, which allow for restricting privileges and restricted filesystem access, respectively. However, C is not always an easy language to develop in, and other languages such as Rust include robust memory safety by design.</p>
+            <p>Keep in mind that if you don't use the previously listed kcgi/ksql/kwebapp libraries, you will need to work with HTTP's eccentricities manually. For an example, here's <a href="helloworld.c.txt">the Hello World code</a> from the LearnBCHS site. And <a href="helloworld.cgi">here it is running</a> as compiled CGI here at the Tilde Institute.</p>
+            <p>Once you've written your software to be served via CGI, be sure to statically link the executables. Sure, there's a larger file size, but the benefits outweigh that in this case - there's no relying on what I may or may not have installed on the Tilde Institute's server. For example:</p>
+            <p>$ cc -static -g -W -Wall -o app.cgi app.c</p>
+            <p>When you've completed compilation, make sure to set permissions properly (755) and move it to the public_html folder in your home directory. httpd(8) is set to use index.html as the index file, however this can be changed to index.cgi or what-have-you by contacting ahriman via the <a href="https://tilde.town">tilde.town</a> or <a href="https://tilde.team">tilde.team</a> IRC networks.</p>
+	</div>
+</div>
+</body>
+</html>
