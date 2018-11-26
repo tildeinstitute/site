@@ -15,10 +15,10 @@
 		</div>
 	</div>         
 	<div id="navigation">
-		<a href="http://tilde.institute">News</a> :: <a href="newacct.html">Sign Up</a> :: <a href="irc.html">IRC</a> :: <a href="start.html">Quick-Start Guide</a> :: <a href="coc.html">Code of Conduct</a> :: <a href="https://tilde.zone/@tildeinstitute">Mastodon</a>
+		<a href="http://tilde.institute">News</a> :: <a href="signup.html">Sign Up</a> :: <a href="irc.html">IRC</a> :: <a href="start.html">Quick-Start Guide</a> :: <a href="coc.html">Code of Conduct</a> :: <a href="https://tilde.zone/@tildeinstitute">Mastodon</a>
 	</div>
 	<div id="content">
-		<p>Welcome to the Tilde Institute! This is an OpenBSD machine whose purpose is to provide a space in the <a href="https://tildeverse.org">tildeverse</a> for experimentation with and education of the OpenBSD operating system. A variety of editors, shells, and compilers are installed to allow for development in a native OpenBSD environment. OpenBSD's httpd(8) is configured so that each user gets their own subdomain, with slowcgi(8) as the fastcgi provider and sqlite3 available. This allows users to experiment with web development using compiled CGI in C, aka the <a href="https://learnbchs.org">BCHS Stack</a>. In addition to php7.0 and mysql (mariadb) by request, this provides an environment where the development of complex web apps is possible.</p>
+		<p>Welcome to the Tilde Institute! This is an OpenBSD machine whose purpose is to provide a space in the <a href="https://tildeverse.org">tildeverse</a> for experimentation with and education of the OpenBSD operating system. Each user receives a subdomain rather than a subdirectory! A variety of editors, shells, and compilers are installed to allow for development in a native OpenBSD environment. OpenBSD's httpd(8) is configured so that each user gets their own subdomain, with slowcgi(8) as the fastcgi provider and sqlite3 available. This allows users to experiment with web development using compiled CGI in C, aka the <a href="https://learnbchs.org">BCHS Stack</a>. In addition to php7.0 and mysql (mariadb) by request, this provides an environment where the development of complex web apps is possible.</p>
         <p>The list of compilers available are as follows:</p>
 			<ul>
 				<li>clang 6.0.0 (C/C++)</li>
@@ -52,12 +52,12 @@
         <p>Feel free to contact ahriman on either the <a href="https://tilde.town">tilde.town</a> or the <a href="https://tilde.chat">tildeverse</a> IRC networks if you need another compiler or shell available, or if you would like your homepage's index changed from index.html to something else (index.cgi, index.php, etc). I can also provide access to MySQL / MariaDB on a request basis.</p>
         <div id="news">
             <h1>News &amp; Updates</h1>
+	    	<em>2018 November 25</em>
+		<p>I've almost completed the workaround for php mail(). The signup form is now working. I'm going to work out a few kinks in an automated add user script, and then everything will be going smoothly.</p>
 	    	<em>2018 November 24</em>
 		<p>Alright, the migration is complete. There are a few things I'll smooth out and finish during the beta phase, like peering with the <a href="https://tilde.chat">tildeverse IRC network</a> and finishing the <a href="newacct.html">OpenBSD php mail() workaround</a>.</p>
 		<em>2018 November 23</em>
 		<p>The migration is in progress. I estimate the beta testing phase to begin either late this evening US/NY time, or tomorrow afternoon.</p>
-            <em>2018 November 20</em>
-            <p>I've almost completed the initial setup. Starting tomorrow, I'll begin the migration to a proper VPS at Hetzner. After the migration is complete and I verify everything is working correctly, the beta phase will begin. At that point, registration will be open to tilde.town and tilde.team members. After extensive testing, when I have all the kinks smoothed out, I will begin accepting registrations from non-town/team users and allow members of the general public to enjoy this service. Here's to hoping the beta phase completes quickly and I don't run into any problems.</p>
         </div>
 	</div>
 </div>
