@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Tilde Institute :: Sign Up</title>
+        <link rel="stylesheet" href="tilde.css" type="text/css"/>
+        <link rel="icon" type="image/png" href="icon.png"/>
+</head>
+<body>
+<div id="container">
+	<div id="logo">
+        <img src="logo.png" alt="" /><br />
+		<div id="logobyline">
+			of OpenBSD Education
+		</div>
+	</div>         
+	<div id="navigation">
+		<a href="http://tilde.institute">News</a> :: <a href="signup.html">Sign Up</a> :: <a href="irc.html">IRC</a> :: <a href="start.html">Quick-Start Guide</a> :: <a href="coc.html">Code of Conduct</a> :: <a href="https://tilde.zone/@tildeinstitute">Mastodon</a>
+	</div>
+	<div id="content">
+<?php
+
+if ($_SERVER["SERVER_NAME"] != "localhost")
+	require_once "ultimate-email/support/smtp.php";
+
+function forbidden_name($name) {
+    return in_array($name, [
+        '0x0',
+        'abuse',
+        'admin',
+        'administrator',
+        'auth',
+        'autoconfig',
+        'bbj',
+        'broadcasthost',
+        'forum',
+        'ftp',
+        'git',
+        'gopher',
+        'hostmaster',
+        'imap',
+        'info',
+        'irc',
+        'is',
+        'isatap',
+        'it',
+        'localdomain',
+        'localhost',
+        'lounge',
+        'mail',
+        'mailer-daemon',
+        'marketing',
+        'marketting',
+        'mis',
+        'news',
+        'nobody',
+        'noc',
+        'noreply',
+        'pop',
+        'pop3',
+        'postmaster',
+        'retro',
+        'root',
+        'sales',
+        'security',
+        'smtp',
+        'ssladmin',
+        'ssladministrator',
+        'sslwebmaster',
+        'support',
+        'sysadmin',
+        'team',
+        'usenet',
+        'uucp',
+        'webmaster',
+        'wpad',
+        'www',
+    ]);
+}
+$message = "";
+if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
+    // Check the name.
+    $name = trim($_REQUEST["username"]);
+    if ($name == "")
+        $message .= "<li>please fill in your desired username</li>";
+    if (strlen($name) > 32)
+        $message .= "<li>username too long (32 character max)</li>";
+    if (!preg_match('/^[A-Za-z][A-Za-z0-9]{2,31}$/', $name))
+        $message .= "<li>username contains invalid characters (lowercase only, must start with a letter)</li>";
+    if (posix_getpwnam($name) || forbidden_name($name))
+        $message .= "<li>sorry, the username $name is unavailable</li>";
+
+    // Check the e-mail address.
+    $email = trim($_REQUEST["email"]);
+    if ($email == "")
+        $message .= "<li>please fill in your email address</li>";
+    else {
+        $result = SMTP::MakeValidEmailAddress($_REQUEST["email"]);
+        if (!$result["success"])
+            $message .= "<li>invalid email address: " . htmlspecialchars($result["error"]) . "</li>";
+        elseif ($result["email"] != $email)
+            $message .= "<li>invalid email address. did you mean:  " . htmlspecialchars($result["email"]) . "</li>";
+    }
+
+    if ($_REQUEST["sshkey"] == "") {
+        $message .= "<li>ssh key required: please create one and submit the public key</li>";
+    }
+
+
+    if ($message == "") { // no validation errors
+
+	    // remember:
+	    $username = $_REQUEST["username"];
+	    $email = $_REQUEST["email"];
+	    $interest = $_REQUEST["interest"];
+	    $sshkey = $_REQUEST["sshkey"];
+/*	$data = sprintf("%s,%s,%s,%s\n", $_REQUEST["username"], $_REQUEST["email"], $_REQUEST["sshkey"], $_REQUEST["interest"]);
+	if (file_put_contents('newusers.csv', $data, FILE_APPEND) >= 1) {
+            echo '<br /><br /><div class="alert alert-success" role="alert">
+                    Success! I\'ll get back to you soon with login instructions. <a href="/">Back to tilde.institute home.</a>
+                  </div>';
+        } else {
+            echo '<br /><br /><div class="alert alert-danger" role="alert">
+                    Something went wrong. Please send an email to <a href="mailto:tilde.institute@protonmail.com">tilde.institute@protonmail.com</a> with details of what happened.
+                  </div>';
+        }
+ */
+	    $newuserfile = fopen("newusers.csv", "a");
+	    fwrite($newuserfile, "$username $email \"$sshkey\"\n");
+	    fclose($newuserfile);
+        $fuzzyfile = fopen("fuzzies.log", "a");
+        fwrite($fuzzyfile, "$username   $email  $interest\n");
+        fclose($fuzzyfile);
+
+    } else {
+        ?>
+        <div class="alert alert-warning" role="alert">
+            <strong>please correct the following errors: </strong>
+            <?=$message?>
+        </div>
+        <?php
+    }
+}
+?>
+<h3>Thank you for signing up! The account should be active within the next five minutes. If it is not, please email <a href="mailto:tilde.institute@protonmail.com">tilde.institute@protonmail.com</a>.</h3>
+</div>
+</div>
+</body>
+</html>
