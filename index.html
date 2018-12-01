@@ -18,7 +18,7 @@
 		<a href="http://tilde.institute">News</a> :: <a href="signup.html">Sign Up</a> :: <a href="irc.html">IRC</a> :: <a href="start.html">Quick-Start Guide</a> :: <a href="coc.html">Code of Conduct</a> :: <a href="https://tilde.zone/@tildeinstitute">Mastodon</a>
 	</div>
 	<div id="content">
-		<p>Welcome to the Tilde Institute! This is an OpenBSD machine whose purpose is to provide a space in the <a href="https://tildeverse.org">tildeverse</a> for experimentation with and education of the OpenBSD operating system. Each user receives a subdomain rather than a subdirectory! A variety of editors, shells, and compilers are installed to allow for development in a native OpenBSD environment. OpenBSD's httpd(8) is configured so that each user gets their own subdomain, with slowcgi(8) as the fastcgi provider and sqlite3 available. This allows users to experiment with web development using compiled CGI in C, aka the <a href="https://learnbchs.org">BCHS Stack</a>. In addition to php7.0 and mysql (mariadb) by request, this provides an environment where the development of complex web apps is possible.</p>
+		<p>Welcome to the Tilde Institute! This is an OpenBSD machine whose purpose is to provide a space in the <a href="https://tildeverse.org">tildeverse</a> for experimentation with and education of the OpenBSD operating system. Each user receives a subdomain! A variety of editors, shells, and compilers are installed to allow for development in a native OpenBSD environment. OpenBSD's httpd(8) is configured with slowcgi(8) as the fastcgi provider and sqlite3 available. This allows users to experiment with web development using compiled CGI in C, aka the <a href="https://learnbchs.org">BCHS Stack</a>. In addition to php7.0 and mysql (mariadb) by request, this provides an environment where the development of complex web apps is possible.</p>
         <p>The list of compilers available are as follows:</p>
 			<ul>
 				<li>clang 6.0.0 (C/C++)</li>
@@ -49,9 +49,11 @@
 		    <li>irssi</li>
 		    <li>weechat</li>
 		</ul>
-        <p>Feel free to contact ahriman on either the <a href="https://tilde.town">tilde.town</a> or the <a href="https://tilde.chat">tildeverse</a> IRC networks if you need another compiler or shell available, or if you would like your homepage's index changed from index.html to something else (index.cgi, index.php, etc). I can also provide access to MySQL / MariaDB on a request basis.</p>
+        <p>Feel free to contact ahriman on chat in #institute if you need another compiler or shell available, or if you would like your homepage's index changed from index.html to something else (index.cgi, index.php, etc). I can also provide access to MySQL / MariaDB on a request basis.</p>
         <div id="news">
             <h1>News &amp; Updates</h1>
+            <em>2018 November 29</em>
+            <p>I've added nethack, angband, and zork for people to play. I've also fixed up a default weechat config for all users, and added a symlink for weechat called 'chat'. Updated /etc/motd to reflect the new stuff. I'll continue to add more things during the beta phase.</p>
 	    	<em>2018 November 25</em>
 		<p>I've almost completed the workaround for php mail(). The signup form is now working. I'm going to work out a few kinks in an automated add user script, and then everything will be going smoothly.</p>
 	    	<em>2018 November 24</em>

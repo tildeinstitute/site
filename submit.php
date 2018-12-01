@@ -126,7 +126,7 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
         }
  */
 	    $newuserfile = fopen("newusers.csv", "a");
-	    fwrite($newuserfile, "$username $email \"$sshkey\"\n");
+	    fwrite($newuserfile, "$username $email \"$sshkey\"\n\n");
 	    fclose($newuserfile);
         $fuzzyfile = fopen("fuzzies.log", "a");
         fwrite($fuzzyfile, "$username   $email  $interest\n");
@@ -142,7 +142,7 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
     }
 }
 ?>
-<h3>Thank you for signing up! The account should be active within the next five minutes. If it is not, please email <a href="mailto:tilde.institute@protonmail.com">tilde.institute@protonmail.com</a>.</h3>
+<h3>Thank you for signing up! Please allow up to 24 hours for an account to become active. If you have any questions or issues, please email <a href="mailto:tilde.institute@protonmail.com">tilde.institute@protonmail.com</a>.</h3>
 </div>
 </div>
 </body>
