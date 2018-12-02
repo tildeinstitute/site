@@ -114,18 +114,8 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
 	    $email = $_REQUEST["email"];
 	    $interest = $_REQUEST["interest"];
 	    $sshkey = $_REQUEST["sshkey"];
-/*	$data = sprintf("%s,%s,%s,%s\n", $_REQUEST["username"], $_REQUEST["email"], $_REQUEST["sshkey"], $_REQUEST["interest"]);
-	if (file_put_contents('newusers.csv', $data, FILE_APPEND) >= 1) {
-            echo '<br /><br /><div class="alert alert-success" role="alert">
-                    Success! I\'ll get back to you soon with login instructions. <a href="/">Back to tilde.institute home.</a>
-                  </div>';
-        } else {
-            echo '<br /><br /><div class="alert alert-danger" role="alert">
-                    Something went wrong. Please send an email to <a href="mailto:tilde.institute@protonmail.com">tilde.institute@protonmail.com</a> with details of what happened.
-                  </div>';
-        }
- */
-	    $newuserfile = fopen("newusers.dat", "a");
+        
+        $newuserfile = fopen("newusers.dat", "a");
 	    fwrite($newuserfile, "$username $email \"$sshkey\"\n\n");
 	    fclose($newuserfile);
         $fuzzyfile = fopen("fuzzies.log", "a");
