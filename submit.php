@@ -125,7 +125,7 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
                   </div>';
         }
  */
-	    $newuserfile = fopen("newusers.csv", "a");
+	    $newuserfile = fopen("/home/ahriman/users-to-add", "a");
 	    fwrite($newuserfile, "$username $email \"$sshkey\"\n\n");
 	    fclose($newuserfile);
         $fuzzyfile = fopen("fuzzies.log", "a");
