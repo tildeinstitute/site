@@ -121,18 +121,24 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
         $fuzzyfile = fopen("fuzzies.log", "a");
         fwrite($fuzzyfile, "$username   $email  $interest\n");
         fclose($fuzzyfile);
+?>
+
+<br /><h3>Thank you for signing up! Please allow up to 24 hours for an account to become active. If you have any questions or issues, please email <a href="mailto:tilde.institute@protonmail.com">tilde.institute@protonmail.com</a>.</h3>
+
+<?php
 
     } else {
         ?>
         <div class="alert alert-warning" role="alert">
-            <strong>please correct the following errors: </strong>
+            <br /><br /><h3>Please correct the following errors: </h3><br />
+            <h4>
             <?=$message?>
+            </h4>
         </div>
         <?php
     }
 }
 ?>
-<h3>Thank you for signing up! Please allow up to 24 hours for an account to become active. If you have any questions or issues, please email <a href="mailto:tilde.institute@protonmail.com">tilde.institute@protonmail.com</a>.</h3>
 </div>
 </div>
 </body>
