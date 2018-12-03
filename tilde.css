@@ -64,6 +64,10 @@ p {
 }
 code {
     text-indent: 30px;
+    font-family: monospace;
+    font: DejaVu Sans Mono;
+    color: #000000;
+    background-color: #999999;
 }
 em {
     font-style: bold;
