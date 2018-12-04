@@ -1,0 +1,2 @@
+**Welcome to the tilde.institute wiki!**
+This is the place to record anything new you've learned and anything cool you've done at the institute. Share information with others to help spread knowledge of the OpenBSD operating system. We'll learn together!
