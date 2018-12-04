@@ -44,6 +44,13 @@ body {
     width: 550px;
     margin-left: 50px;
 }
+#code {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #999999;
+    color: #000000;
+}
 a:link {
 text-decoration: none;
 color:#cccccc;
