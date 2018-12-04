@@ -20,6 +20,7 @@
 	</div>
 	<div id="content">
 		<p>Welcome to the Tilde Institute! This is an OpenBSD machine whose purpose is to provide a space in the <a href="https://tildeverse.org">tildeverse</a> for experimentation with and education of the OpenBSD operating system. Each user receives a subdomain! A variety of editors, shells, and compilers are installed to allow for development in a native OpenBSD environment. OpenBSD's httpd(8) is configured with slowcgi(8) as the fastcgi provider and sqlite3 available. This allows users to experiment with web development using compiled CGI in C, aka the <a href="https://learnbchs.org">BCHS Stack</a>. In addition to php7.0 and mysql (mariadb) by request, this provides an environment where the development of complex web apps is possible.</p>
+        <p>Local mail delivery now available! Simply open mutt, neomutt, or alpine and compose a message to &lt;username&gt;@tilde.institute.</p>
         <p>The list of compilers available are as follows:</p>
 			<ul>
 				<li>clang 6.0.0 (C/C++)</li>
@@ -54,6 +55,8 @@
         <div id="news">
             <h1>News &amp; Updates</h1>
             <em>2018 December 3</em>
+            <p>Local mail delivery is now working!</p>
+            <em>2018 December 3</em>
             <p>I just installed DokuWiki so users can record and share cool things to do and cool ways to customize their environment, etc. The link is with the other navigation links.</p>
             <em>2018 December 2</em>
             <p>There's an issue with https on subdomains, I'll have it fixed by tomorrow.</p>
@@ -63,12 +66,6 @@
             <p>If you have latency issues, mosh is available on tilde.institute as an alternative to ssh. Simply install mosh on your end, then issue "mosh user@tilde.institute" as you would with ssh. Make sure your home computer's locale (LANG, LC_CTYPE) is set properly to a UTF-8 encoding before attempting to use mosh.</p>
             <em>2018 November 29</em>
             <p>I've added nethack, angband, and zork for people to play. I've also fixed up a default weechat config for all users, and added a symlink for weechat called 'chat'. Updated /etc/motd to reflect the new stuff. I'll continue to add more things during the beta phase.</p>
-	    	<em>2018 November 25</em>
-		<p>I've almost completed the workaround for php mail(). The signup form is now working. I'm going to work out a few kinks in an automated add user script, and then everything will be going smoothly.</p>
-	    	<em>2018 November 24</em>
-		<p>Alright, the migration is complete. There are a few things I'll smooth out and finish during the beta phase, like peering with the <a href="https://tilde.chat">tildeverse IRC network</a> and finishing the <a href="newacct.html">OpenBSD php mail() workaround</a>.</p>
-		<em>2018 November 23</em>
-		<p>The migration is in progress. I estimate the beta testing phase to begin either late this evening US/NY time, or tomorrow afternoon.</p>
         </div>
 	</div>
 </div>
