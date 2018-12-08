@@ -76,6 +76,8 @@ code {
     font: DejaVu Sans Mono;
     color: #000000;
     background-color: #999999;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 em {
     font-style: bold;
