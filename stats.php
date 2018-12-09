@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Tilde Institute :: IRC</title>
+        <title>Tilde Institute :: Stats</title>
         <link rel="stylesheet" href="tilde.css" type="text/css"/>
         <link rel="icon" type="image/png" href="icon.png"/>
 </head>
@@ -18,12 +18,10 @@
 		<a href="http://tilde.institute">News</a> :: <a href="signup.html">Sign Up</a> :: <a href="irc.html">IRC</a> :: <a href="start.html">Quick-Start Guide</a> :: <a href="coc.html">Code of Conduct</a> :: <a href="https://tilde.zone/@tildeinstitute">Mastodon</a> :: <a href="/wiki/index.php">Wiki</a> :: <a href="stats.php">Stats</a>
 	</div>
 	<div id="content">
-        <p>To connect to the tildeverse IRC network and begin chatting, simply use the command <code>chat</code>! If you prefer to use a different IRC client than the default, such as irssi, the following server information will apply:</p>
-        <ul>
-            <li>irc.tilde.chat, port 6697, ssl</li>
-        </ul>
-        <p>Don't forget to /join #institute and /join #meta</p>
-        <p>Join us on the tildeverse IRC network and socialize with other tilde users!</p>
+        <!-- <p>Connected Users (5min):</p>
+            <?php include("table.connusers") ?> -->
+        <p>Registered Users (1hr):</p>
+            <?php include("table.regusers") ?>
 	</div>
 </div>
 </body>
