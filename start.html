@@ -1,7 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!DOCTYPE PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/1/DTD/1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/" lang="en" xml:lang="en">
 <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Type" content="text; charset=utf-8" />
         <title>Tilde Institute :: Quick-Start Guide</title>
         <link rel="stylesheet" href="tilde.css" type="text/css"/>
         <link rel="icon" type="image/png" href="icon.png"/>
@@ -15,7 +15,7 @@
 		</div>
 	</div>         
 	<div id="navigation">
-		<a href="http://tilde.institute">News</a> :: <a href="signup.html">Sign Up</a> :: <a href="irc.html">IRC</a> :: <a href="start.html">Quick-Start Guide</a> :: <a href="coc.html">Code of Conduct</a> :: <a href="https://tilde.zone/@tildeinstitute">Mastodon</a> :: <a href="/wiki/index.php">Wiki</a> :: <a href="/stats">Stats</a>
+		<a href="http://tilde.institute">News</a> :: <a href="/signup">Sign Up</a> :: <a href="/irc">IRC</a> :: <a href="/start">Quick-Start Guide</a> :: <a href="/coc">Code of Conduct</a> :: <a href="https://tilde.zone/@tildeinstitute">Mastodon</a> :: <a href="/wiki/index.php">Wiki</a> :: <a href="/stats">Stats</a>
 	</div>
 	<div id="content">
         <p>This will be a quick-and-dirty guide to getting started with the BCHS stack. More information can be found at:</p>
@@ -31,8 +31,8 @@
             <p>Keep in mind that if you don't use the previously listed kcgi/ksql/kwebapp libraries, you will need to work with HTTP's eccentricities manually. For an example, here's <a href="helloworld.c.txt">the Hello World code</a> from the LearnBCHS site. And <a href="helloworld.cgi">here it is running</a> as compiled CGI here at the Tilde Institute.</p>
             <p>Once you've written your software to be served via CGI, be sure to statically link the executables. Sure, there's a larger file size, but the benefits outweigh that in this case - there's no relying on what I may or may not have installed on the Tilde Institute's server. For example:</p>
             <p>$ cc -static -g -W -Wall -o app.cgi app.c</p>
-            <p>When you've completed compilation, make sure to set permissions properly (755) and move it to the public_html folder in your home directory. httpd(8) is set to use index.html as the index file, however this can be changed to index.cgi or what-have-you by contacting ahriman via IRC.</p>
-            <p>~institute user <code>xvetrd</code> has written a more detailed example on kcgi than is provided on the library's site. It includes an example makefile as well. The KCGI Starter archive <a href="kcgi-start.tar.gz">is available here</a>. Simply <code>curl -O https://tilde.institute/kcgi-start.tar.gz</code> it to your home directory here on ~institute, untar, make, and make install to test the compilation. It installs to ~/public_html with the proper ownership and permissions. View the index.c source and the makefile to see what goes on under the hood! Feel free to adapt it your own projects!</p>
+            <p>When you've completed compilation, make sure to set permissions properly (755) and move it to the public folder in your home directory. httpd(8) is set to use index as the index file, however this can be changed to index.cgi or what-have-you by contacting ahriman via IRC.</p>
+            <p>~institute user <code>xvetrd</code> has written a more detailed example on kcgi than is provided on the library's site. It includes an example makefile as well. The KCGI Starter archive <a href="kcgi-start.tar.gz">is available here</a>. Simply <code>curl -O https://tilde.institute/kcgi-start.tar.gz</code> it to your home directory here on ~institute, untar, make, and make install to test the compilation. It installs to ~/public with the proper ownership and permissions. View the index.c source and the makefile to see what goes on under the hood! Feel free to adapt it your own projects!</p>
 	</div>
 </div>
 </body>
