@@ -15,11 +15,12 @@
 		</div>
 	</div>         
 	<div id="navigation">
-		<a href="http://tilde.institute">News</a> :: <a href="signup.html">Sign Up</a> :: <a href="irc.html">IRC</a> :: <a href="start.html">Quick-Start Guide</a> :: <a href="coc.html">Code of Conduct</a> :: <a href="https://tilde.zone/@tildeinstitute">Mastodon</a> :: <a href="/wiki/index.php">Wiki</a> :: <a href="stats.php">Stats</a>
+		<a href="http://tilde.institute">News</a> :: <a href="signup.html">Sign Up</a> :: <a href="irc.html">IRC</a> :: <a href="start.html">Quick-Start Guide</a> :: <a href="coc.html">Code of Conduct</a> :: <a href="https://tilde.zone/@tildeinstitute">Mastodon</a> :: <a href="/wiki/index.php">Wiki</a> :: <a href="/stats">Stats</a>
 	</div>
 	<div id="content">
-        <!-- <p>Connected Users (5min):</p>
-            <?php include("table.connusers") ?> -->
+        <br />
+        <p>Connected Users (5min):</p>
+            <?php include("table.connusers") ?>
         <p>Registered Users (1hr):</p>
             <?php include("table.regusers") ?>
 	</div>
