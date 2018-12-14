@@ -20,7 +20,7 @@
 	<div id="content">
 		<p>Welcome to the tilde.institute! This is an OpenBSD machine whose purpose is to provide a space in the <a href="https://tildeverse.org">tildeverse</a> for experimentation with and education of the OpenBSD operating system. Each user receives a subdomain! A variety of editors, shells, and compilers are installed to allow for development in a native OpenBSD environment. OpenBSD's httpd(8) is configured with slowcgi(8) as the fastcgi provider and sqlite3 available. This allows users to experiment with web development using compiled CGI in C, aka the <a href="https://learnbchs.org">BCHS Stack</a>. In addition to php7.0 and mysql (mariadb) by request, this provides an environment where the development of complex web apps is possible.</p>
         <p>NEW! Mailing list available for tilde.institute! Web archive and <a href="https://lists.tildeverse.org/postorius/lists/institute.lists.tildeverse.org/">subscribing information available here</a>.</p>
-        <p>Local mail delivery now available! Simply open mutt, neomutt, or alpine and compose a message to &lt;username&gt;@tilde.institute.</p>
+        <p>Mail now available! Simply open mutt, neomutt, or alpine and compose a message to &lt;username&gt;@tilde.institute.</p>
         <p>The list of compilers available are as follows:</p>
 			<ul>
 				<li>clang 6.0.0 (C/C++)</li>
@@ -54,6 +54,8 @@
         <p>Feel free to contact ahriman on chat in #institute if you need another compiler or shell available, or if you would like your homepage's index changed from index to something else (index.cgi, index.php, etc). I can also provide access to MySQL / MariaDB on a request basis.</p>
         <div id="news">
             <h1>News &amp; Updates</h1>
+            <em>2018 December 14</em>
+            <p>Apparently I dun goof'd and didn't allow smtp traffic in pf (OpenBSD's firewall). So now mail works as it should.</p>
             <em>2018 December 10</em>
             <p>New IRC bot in the works! I named it "skoolbot", it lives in #institute. So far it returns the uptime/load, manpages by search term, and lets you toot to the ~institute mastodon account via IRC.</p>
             <p>I also hacked together a couple of scripts designed to aggregate both connected users and registered users, every 5 minutes and 1 hour respectively, and stitch together the info <a href="/stats">for a stats page</a>.</p>
