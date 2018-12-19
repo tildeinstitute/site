@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Tilde Institute :: Stats</title>
+        <title>tilde.institute :: Stats</title>
         <link rel="stylesheet" href="tilde.css" type="text/css"/>
         <link rel="icon" type="image/png" href="icon.png"/>
 </head>
