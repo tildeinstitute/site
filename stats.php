@@ -19,10 +19,11 @@
 	</div>
 	<div id="content">
         <br />
+        <p><?php include("table.weekconns"); ?> logins this week</p>
         <p>Connected Users (5min):</p>
-            <?php include("table.connusers") ?>
+            <?php include("table.connusers"); ?>
         <p>Registered Users (1hr):</p>
-            <?php include("table.regusers") ?>
+            <?php include("table.regusers"); ?>
 	</div>
 </div>
 </body>
