@@ -15,11 +15,11 @@
 		</div>
 	</div>         
 	<div id="navigation">
-		<a href="http://tilde.institute">News</a> :: <a href="/signup">Sign Up</a> :: <a href="/irc">IRC</a> :: <a href="/start">BCHS Guide</a> :: <a href="/coc">Code of Conduct</a> :: <a href="https://tilde.zone/@tildeinstitute">Mastodon</a> :: <a href="/wiki/index.php">Wiki</a> :: <a href="https://tildegit.org/institute">Git</a> :: <a href="/stats">Stats</a>
+		<a href="http://tilde.institute">News</a> :: <a href="/signup">Sign Up</a> :: <a href="/irc">IRC</a> :: <a href="/start">BCHS Guide</a> :: <a href="/coc">Code of Conduct</a> :: <a href="https://tilde.zone/@tildeinstitute">Mastodon</a> :: <a href="/wiki">Wiki</a> :: <a href="https://tildegit.org/institute">Git</a> :: <a href="/stats">Stats</a>
 	</div>
 	<div id="content">
         <br />
-        <p><?php include("table.weekconns"); ?> logins this week</p>
+        <p><?php include("table.weekconns"); ?> unique users logged in this week (resets Saturdays 00:00 UTC)</p>
         <p>Connected Users (5min):</p>
             <?php include("table.connusers"); ?>
         <p>Registered Users (1hr):</p>

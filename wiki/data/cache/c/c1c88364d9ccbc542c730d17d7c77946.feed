@@ -11,7 +11,7 @@
         <description></description>
         <link>https://tilde.institute/wiki/</link>
         <image rdf:resource="https://tilde.institute/wiki/lib/tpl/dokuwiki/images/favicon.ico" />
-       <dc:date>2018-12-25T09:03:12+0000</dc:date>
+       <dc:date>2019-01-01T04:33:34+0000</dc:date>
         <items>
             <rdf:Seq>
                 <rdf:li rdf:resource="https://tilde.institute/wiki/doku.php?id=start&amp;rev=1543882598&amp;do=diff"/>

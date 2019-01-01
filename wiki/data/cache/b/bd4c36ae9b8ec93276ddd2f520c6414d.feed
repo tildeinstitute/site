@@ -11,7 +11,7 @@
         <description></description>
         <link>https://tilde.institute/wiki/</link>
         <image rdf:resource="https://tilde.institute/wiki/lib/tpl/dokuwiki/images/favicon.ico" />
-       <dc:date>2018-12-13T16:56:14+0000</dc:date>
+       <dc:date>2018-12-28T14:14:06+0000</dc:date>
         <items>
             <rdf:Seq>
                 <rdf:li rdf:resource="https://tilde.institute/wiki/doku.php?id=playground:playground&amp;rev=1543881884&amp;do=diff"/>
