@@ -1,0 +1,24 @@
+<h2>UNIX ProTips</h2>
+<p>I realized today I wasn't getting mail notifications, and I hadn't
+set them up on this shell. So here are some things I do on my
+local machine that work here:</p>
+<p>To get the shell to tell you when you have new mail, after command
+executions, add this to your <code>.profile</code></p>
+
+<p><code>export MAILCHECK=0</code></p>
+
+<p>And, if you want, you can have a persistent notification when you
+have un-incorporated mail, or more specifically, when your
+<code>/var/mail/&lt;username&gt;</code> isn't empty.</p>
+
+<p><code>PS1="\$([-s /var/mail/`whoami` ] && echo '* ')$PS1"</code></p>
+
+<p>This works in /bin/ksh, I can't speak for other shells.</p>
+
+<p>If anybody else has some quick tips they would like to share, I
+encorage them to edit this page.</p>
+
+<p>Happy Unixing!</p>
+<p>~xvetrd</p>
+
+<a href="/wiki">Back to Wiki</a>
