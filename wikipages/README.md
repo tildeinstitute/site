@@ -20,4 +20,4 @@ git commit -m "added page whatchamacalit to wiki"
 
 git push
 
-Then from the tildegit.org web interface, open a pull request to this repository from your fork
+Then from the tildegit.org web interface, open a pull request to this repository from your fork/branch
