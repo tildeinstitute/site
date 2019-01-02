@@ -23,9 +23,9 @@
     ?>
 
         <h2>~institute wiki</h2>
-        <p>welcome to the tilde.institute wiki</p>
+        <p>Welcome to the tilde.institute wiki</p>
 
-        <p>if you want to contribute, check out the
+        <p>If you want to add a page, check out the
         <a href="https://tildegit.org/institute/site/src/branch/master/wikipages">repository</a> and open a PR!
         </p>
 
