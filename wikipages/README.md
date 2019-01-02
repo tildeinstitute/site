@@ -4,7 +4,7 @@ Step-By-Step:
 
 Fork this repo
 
-git clone https://tildegit.org/<your username>/site.git
+git clone https://tildegit.org/your_username/site.git
 
 cd site
 
