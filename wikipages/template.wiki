@@ -1,0 +1,15 @@
+<!--
+    author:
+    title:
+    description:
+-->
+
+<h2>Page Title</h2>
+
+<p>paragraph content</p>
+
+<code>inline filesystem paths, commands, etc</code>
+
+<div class="code">code blockquote</div>
+
+<a href="/wiki">Back to Wiki</a>

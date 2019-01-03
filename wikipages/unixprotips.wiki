@@ -1,3 +1,9 @@
+<!--
+    author: xvetrd
+    title: Unix ProTips
+    description:
+-->
+
 <h2>UNIX ProTips</h2>
 <p>I realized today I wasn't getting mail notifications, and I hadn't
 set them up on this shell. So here are some things I do on my
@@ -19,6 +25,5 @@ have un-incorporated mail, or more specifically, when your
 encorage them to edit this page.</p>
 
 <p>Happy Unixing!</p>
-<p>~xvetrd</p>
 
 <a href="/wiki">Back to Wiki</a>
