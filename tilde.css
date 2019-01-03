@@ -95,8 +95,11 @@ h1 {
     margin-left: auto;
     margin-right: auto;
 }
+h2 {
+    font-size: 1.5em;
+}
 h3 {
-	font-size: 1.5em;
+	font-size: 1.35em;
 	margin-bottom: 5px;
 }
 h4 {

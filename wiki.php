@@ -30,7 +30,8 @@
         </p>
 
         <h3>Pages:</h3>
-        <a href="wiki.php?page=unixprotips">UNIX ProTips</a><br />
+        &nbsp;&nbsp;<a href="wiki.php?page=dcss">Dungeon Crawl Stone Soup</a><br />
+        &nbsp;&nbsp;<a href="wiki.php?page=unixprotips">UNIX ProTips</a><br />
         <?php
 
         } else {

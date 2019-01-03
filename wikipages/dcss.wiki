@@ -1,0 +1,46 @@
+<!--
+    author: ahriman / Ben Morrison
+    title: Dungeon Crawl Stone Soup
+    description: playing DCSS on the tildeverse server
+-->
+
+<h2>Dungeon Crawl Stone Soup</h2>
+
+<p>DCSS is a fun roguelike game that is now available on a
+ tildeverse server for your enjoyment. There are two ways to
+ play: via WebTiles for simple 2d graphics and via SSH for
+ a more traditional ascii interface.</p>
+
+ <p>CTVO: <a href="https://crawl.tildeverse.org">https://crawl.tildeverse.org</a></p>
+
+<p>If you already have an account on tilde.institute, you can
+ play via the ascii interface by issuing the command <code>dcss</code>.
+ This will automatically connect to the server and present the
+ login/registration menu.</p>
+
+<p>Some users prefer graphics. For webtiles, it will be necessary
+ to go to <a href="https://crawl.tildeverse.org">https://crawl.tildeverse.org</a>.
+ Click "PLAY" to open the WebTiles interface.</p>
+
+<h3>Recorded Games</h3>
+
+<p>All games on CTVO (the tildeverse crawl server) are recorded for
+ later playback. In order to review a previously recorded game,
+ navigate to <a href="https://crawl.tildeverse.org/ttyrec">the ttyrec directory</a>,
+ select a username, and download the ttyrec file. You'll need to
+ have the ttyrec package installed in order to review them. Issue:
+ <code>ttyplay file.ttyrec</code> and watch as your terminal
+ automagically transforms into a recorded DCSS game.</p>
+
+<p>ttyplay is installed on tilde.institute, so feel free to download
+ a game to your home directory and watch it from there.</p>
+
+<h3>Morgue Files</h3>
+
+<p>Want to see the run-down of a game? Check out the morgue file
+ for it. They're sorted into username directories at:
+ <a href="https://crawl.tildeverse.org/morgue">https://crawl.tildeverse.org/morgue</a>.
+ Each morgue file contains information such as how you died, your stats,
+ an account of monsters vanquished, among other stuff.</p>
+
+<a href="/wiki">Back to Wiki</a>
