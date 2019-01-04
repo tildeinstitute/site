@@ -15,7 +15,7 @@
 		</div>
 	</div>         
 	<div id="navigation">
-		<a href="http://tilde.institute">News</a> :: <a href="/signup">Sign Up</a> :: <a href="/irc">IRC</a> :: <a href="/coc">Code of Conduct</a> :: <a href="https://tilde.zone/@tildeinstitute">Mastodon</a> :: <a href="/wiki">Wiki</a> :: <a href="https://tildegit.org/institute">Git</a> :: <a href="/stats">Stats</a>
+		<a href="http://tilde.institute">News</a> :: <a href="/signup">Sign Up</a> :: <a href="/coc">Code of Conduct</a> :: <a href="https://tilde.zone/@tildeinstitute">Mastodon</a> :: <a href="/wiki">Wiki</a> :: <a href="https://tildegit.org/institute">Git</a> :: <a href="/stats">Stats</a>
 	</div>
 	<div id="content">
 <?php
