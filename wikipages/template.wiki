@@ -12,4 +12,8 @@
 
 <div class="code">code blockquote</div>
 
+<ul>
+    <li>bulleted list item</li>
+</ul>
+
 <a href="/wiki">Back to Wiki</a>
