@@ -1,0 +1,40 @@
+<!--
+    author: kneezle
+    title: Getting Started with ~.institute
+    description: Getting started page
+-->
+
+<h2>Getting Started with ~.institute</h2>
+
+<p>Hello and welcome to tilde.institute! We hope you enjoy your new ~/home</p>
+
+<p>Useful commands:</p>
+
+<p>The basic unix commands are fairly well documented, and you can learn more about them here: <a href="http://mally.stanford.edu/~sr/computing/basic-unix.html">http://mally.stanford.edu/~sr/computing/basic-unix.html</a></p>
+<p>For institute specific commands, check out below:</p>
+
+<ul>
+<li>To change your shell: <code>chsh</code></li>
+<li>To see if you have unread mail: <code>newmail</code></li>
+<li>To see the intro message again: <code>motd</code></li>
+<li>To chat with us on IRC: <code>chat</code></li>
+<li>To use the <a href="https://www.linode.com/docs/networking/ssh/persistent-terminal-sessions-with-tmux/">Terminal multiplexer</a>: <code>tmux</code></li>
+<li>To check your ~institute email account: <code>mutt</code></li>
+</ul>
+
+<p>Same fun games we have:</p>
+<ul>
+<li>Collaborative world-building: <code>holodeck</code></li>
+<li>Plant a little garden: <code>botany</code></li>
+<li>Play with other ~institute members: <code>tron</code></li>
+<li>The classic roguelike: <code>nethack</code></li>
+<li>Roguelike set in Middle-Earth: <code>angband</code></li>
+<li>The classic adventure game: <code>zork</code></li>
+<li>Dungeon Crawl Stone Soup: <code>dcss</code></li>
+<li>Multi-user persistent social-farming game: <code>asciifarm</code></li>
+</ul>
+
+
+<p>Happy Unixing!</p>
+
+<a href="/wiki">Back to Wiki</a>

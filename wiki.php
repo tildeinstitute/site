@@ -24,8 +24,10 @@
 
         <h2>~institute wiki</h2>
         <p>Welcome to the tilde.institute wiki</p>
+	
+	<p>If you are new here, you likely want to check out the <a href="wiki.php?page=gettingstartedcommands">"getting started" page</a>"</p>
 
-        <p>If you want to add a page, check out the
+        <p>If you know your way around and want to contribute to the wiki, check out the
         <a href="https://tildegit.org/institute/site/src/branch/master/wikipages">repository</a> and open a PR!
         </p>
 
