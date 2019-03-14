@@ -38,6 +38,7 @@
         &nbsp;&nbsp;<a href="wiki.php?page=gopher">Getting Started With Gopher</a><br />
         &nbsp;&nbsp;<a href="wiki.php?page=gpg-for-ssh-auth">GnuPG for SSH Authentication</a><br />
         &nbsp;&nbsp;<a href="wiki.php?page=irc">IRC</a><br />
+        &nbsp;&nbsp;<a href="wiki.php?page=password-store">password-store Usage Guide</a><br />
         &nbsp;&nbsp;<a href="wiki.php?page=unixprotips">UNIX ProTips</a><br />
         <?php
 
