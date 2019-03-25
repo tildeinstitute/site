@@ -49,14 +49,14 @@ body {
     width: 500px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #999999;
+    background-color: #088a08;
     color: #000000;
 }
 .code {
     width: 500px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #999999;
+    background-color: #088a08;
     color: #000000;
 }
 a:link {
@@ -65,7 +65,7 @@ color:#cccccc;
 }
 
 a:visited {
-color:#999999;
+color:#088a08;
 text-decoration: none;
 }
 
@@ -82,7 +82,7 @@ code {
     font-family: monospace;
     font: DejaVu Sans Mono;
     color: #000000;
-    background-color: #999999;
+    background-color: #088a08;
     padding-left: 4px;
     padding-right: 4px;
 }
