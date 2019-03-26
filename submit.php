@@ -33,6 +33,7 @@ function forbidden_name($name) {
         'autoconfig',
         'bbj',
         'broadcasthost',
+        'copy',
         'forum',
         'ftp',
         'git',
