@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>tilde.institute :: Sign Up</title>
         <link rel="stylesheet" href="tilde.css" type="text/css"/>
         <link rel="icon" type="image/png" href="icon.png"/>
@@ -13,7 +14,7 @@
 		<div id="logobyline">
 			of OpenBSD Education
 		</div>
-	</div>         
+	</div>
 	<div id="navigation">
 		<a href="http://tilde.institute">News</a> :: <a href="/signup">Sign Up</a> :: <a href="/coc">Code of Conduct</a> :: <a href="https://tilde.zone/@tildeinstitute">Mastodon</a> :: <a href="/wiki">Wiki</a> :: <a href="https://tildegit.org/institute">Git</a> :: <a href="/stats">Stats</a>
 	</div>
@@ -115,7 +116,7 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
 	    $email = $_REQUEST["email"];
 	    $interest = $_REQUEST["interest"];
 	    $sshkey = $_REQUEST["sshkey"];
-        
+
         $newuserfile = fopen("newusers.dat", "a");
 	    fwrite($newuserfile, "$username $email \"$sshkey\"\n\n");
 	    fclose($newuserfile);
