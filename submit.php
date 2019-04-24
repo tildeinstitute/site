@@ -23,7 +23,9 @@
 
 if ($_SERVER["SERVER_NAME"] != "localhost")
 	require_once "ultimate-email/support/smtp.php";
-
+function isTaken($istaken) {
+    return in_array($istaken, file("userlist", FILE_IGNORE_NEW_LINES));
+}
 function forbidden_name($name) {
     return in_array($name, [
         '0x0',
@@ -91,7 +93,7 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
         $message .= "<li>username too long (32 character max)</li>";
     if (!preg_match('/^[A-Za-z][A-Za-z0-9]{2,31}$/', $name))
         $message .= "<li>username contains invalid characters (lowercase only, must start with a letter)</li>";
-    if (posix_getpwnam($name) || forbidden_name($name))
+    if (isTaken($name) || forbidden_name($name))
         $message .= "<li>sorry, the username $name is unavailable</li>";
 
     // Check the e-mail address.
