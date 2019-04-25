@@ -73,6 +73,7 @@ function forbidden_name($name) {
         'ssladmin',
         'ssladministrator',
         'sslwebmaster',
+        'staging',
         'support',
         'sysadmin',
         'team',
