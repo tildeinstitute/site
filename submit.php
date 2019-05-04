@@ -135,7 +135,7 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
         fclose($fuzzyfile);
 ?>
 
-<br /><h3>Thank you for signing up! Please allow up to 24 hours for an account to become active. If you have any questions or issues, please email <a href="mailto:ahriman@tilde.institute">ahriman@tilde.institute</a>.</h3>
+<br /><h3>Thank you for signing up! Please allow up to 24 hours for an account to become active. If you have any questions or issues, please email <a href="mailto:admins@tilde.institute">admins@tilde.institute</a>.</h3>
 
 <?php
 
