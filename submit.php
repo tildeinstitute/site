@@ -16,7 +16,7 @@
 		</div>
 	</div>
 	<div id="navigation">
-		<a href="http://tilde.institute">News</a> :: <a href="/signup">Sign Up</a> :: <a href="/coc">Code of Conduct</a> :: <a href="https://tilde.zone/@tildeinstitute">Mastodon</a> :: <a href="https://wiki.tilde.institute">Wiki</a> :: <a href="https://tildegit.org/institute">Git</a> :: <a href="/stats">Stats</a>
+		<a href="http://tilde.institute">News</a> :: <a href="/signup">Sign Up</a> :: <a href="/coc">Code of Conduct</a> :: <a href="https://tilde.zone/@tildeinstitute">Mastodon</a> :: <a href="https://wiki.tilde.institute">Wiki</a> :: <a href="https://tildegit.org/institute">Git</a> :: <a href="/stats">Stats</a> :: <a href="https://twtxt.tilde.institute">twtxt</a>
 	</div>
 	<div id="content">
 <?php
@@ -28,7 +28,25 @@ function isTaken($istaken) {
 }
 function bannedUsers($name) {
     return in_array($name, [
-        'campari',
+        'campari', //was selling eggdrop bots
+        'remy', //been trying to get accounts for DoS attacks
+        'blades', //same as remy
+        'ripcode', //same as remy
+        'jundi', // reported by thunix as being part of a botnet
+        'larasaty', //same
+        'mom', //same
+        'andro', //same
+        'hasbullah', //same
+        'naruto', //same
+        'pria', //same
+        'abimks', //same
+        'bullah', //same
+        'janda', //same
+        'mks', //same
+        'makmur', //same
+        'makassar', //same
+        'abah', //same
+        'derby', //same
     ]);
 }
 function forbidden_name($name) {
