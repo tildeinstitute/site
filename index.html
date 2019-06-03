@@ -19,42 +19,52 @@
         <a href="http://tilde.institute">News</a> :: <a href="/signup">Sign Up</a> :: <a href="/coc">Code of Conduct</a> :: <a rel="me" href="https://tilde.zone/@tildeinstitute">Mastodon</a> :: <a href="https://wiki.tilde.institute">Wiki</a> :: <a href="https://tildegit.org/institute">Git</a> :: <a href="/stats">Stats</a> :: <a href="https://twtxt.tilde.institute">twtxt</a>
 	</div>
 	<div id="content">
-		<p>Welcome to tilde.institute! This is an OpenBSD machine whose purpose is to provide a space in the <a href="https://tildeverse.org">tildeverse</a> for experimentation with and education of the OpenBSD operating system. A variety of editors, shells, and compilers are installed to allow for development in a native OpenBSD environment. OpenBSD's httpd(8) is configured with slowcgi(8) as the fastcgi provider and sqlite3 available. This allows users to experiment with web development using compiled CGI in C, aka the <a href="https://learnbchs.org">BCHS Stack</a>. In addition to php7.0 and mysql (mariadb) by request, this provides an environment where the development of complex web apps is possible.</p>
+        <p>Welcome to tilde.institute! This is an OpenBSD machine whose purpose is to provide a space in the <a href="https://tildeverse.org">tildeverse</a> for experimentation with and education of the <code>OpenBSD</code> operating system. A variety of editors, shells, and compilers are installed to allow for development in a native <code>OpenBSD</code> environment. OpenBSD's <code>httpd(8)</code> is configured with <code>slowcgi(8)</code> as the fastcgi provider and <code>sqlite3</code> available. This allows users to experiment with web development using compiled <code>CGI</code> in <code>C</code>, aka the <a href="https://learnbchs.org">BCHS Stack</a>. In addition to <code>php7.0</code> and <code>mariadb</code> by request, this provides an environment where the development of complex web apps is possible.</p>
         <p>User sites are accessible via <code>https://&lt;user&gt;.tilde.institute</code></p>
         <p>Mailing list now available for tilde.institute! Web archive and <a href="https://lists.tildeverse.org/postorius/lists/institute.lists.tildeverse.org/">subscribing information available here</a>. The mailing list will be the primary means of communication between tilde.institute and users regarding announcements and critical issues.</p>
         <p>The list of compilers available are as follows:</p>
 			<ul>
-				<li>clang 6.0.0 (C/C++)</li>
-				<li>Rust 1.29.2</li>
-				<li>Go 1.11</li>
-                <li>ghc 8.2.2 (haskell)</li>
-                <li>nasm 2.13.03 &amp; yasm 1.3.0</li>
+                <li><code>gcc</code> 8.3.0</li>
+                <li><code>clang</code> 6.0.0</li>
+                <li><code>jdk</code> 1.8.0</li>
+                <li><code>scala</code> 2.12.3</li>
+                <li><code>rustc</code> 1.29.2</li>
+                <li><code>go</code> 1.11</li>
+                <li><code>elixir</code> 1.7.3</li>
+                <li><code>erlang</code> 19.3</li>
+                <li><code>ghc</code> 8.2.2</li>
+                <li><code>clisp</code> 2.49</li>
+                <li><code>racket</code> 7.0</li>
+                <li><code>guile</code> 1.8.8</li>
+                <li><code>nasm</code> 2.13.03</li>
+                <li><code>yasm</code> 1.3.0</li>
 			</ul>
-            <p>We also provide non-HTTP access to various interpreted languages as well:</p>
+            <p>We also provide non-HTTP access to various interpreted languages:</p>
             <ul>
-                <li>python (2.7 &amp; 3.6)</li>
-                <li>ruby 2.5</li>
-                <li>perl 5.24</li>
+                <li><code>python</code> (2.7 &amp; 3.6)</li>
+                <li><code>ruby</code> 2.5</li>
+                <li><code>perl</code> 5.24</li>
+                <li><code>lua</code> 5.3.5</li>
             </ul>
             <p>Your interactive shell can be changed with the <code>chsh</code> command. The shells available:</p>
             <ul>
-                <li>/bin/ksh (default)</li>
-                <li>/bin/sh</li>
-                <li>/bin/csh</li>
-                <li>/usr/local/bin/bash</li>
-                <li>/usr/local/bin/dash</li>
-                <li>/usr/local/bin/zsh</li>
-                <li>/usr/local/bin/fish</li>
-                <li>/usr/local/bin/tcsh</li>
-                <li>/usr/local/bin/elvish</li>
+                <li><code>/bin/ksh</code> (default)</li>
+                <li><code>/bin/sh</code></li>
+                <li><code>/bin/csh</code></li>
+                <li><code>/usr/local/bin/bash</code></li>
+                <li><code>/usr/local/bin/dash</code></li>
+                <li><code>/usr/local/bin/zsh</code></li>
+                <li><code>/usr/local/bin/fish</code></li>
+                <li><code>/usr/local/bin/tcsh</code></li>
+                <li><code>/usr/local/bin/elvish</code></li>
             </ul>
 	    <p>The IRC clients available by default are:</p>
 	    <ul>
-		    <li>weechat</li>
-		    <li>irssi</li>
-            <li>ircII</li>
+            <li><code>weechat</code></li>
+            <li><code>irssi</code></li>
+            <li><code>ircII</code></li>
 		</ul>
-        <p>Feel free to contact ahriman via <a href="mailto:ahriman@tilde.institute">ahriman@tilde.institute</a> or on chat in #institute if you need another compiler or shell available, or if you would like your homepage's index changed from index.html to something else (index.cgi, index.php, etc). I can also provide access to MySQL / MariaDB on a request basis.</p>
+        <p>Feel free to contact the admins via <a href="mailto:admins@tilde.institute">admins@tilde.institute</a> or on chat in #institute if you need another package installed, or if you would like your homepage's index changed from index.html to something else (index.cgi, index.php, etc). We can also provide access to MariaDB by request.</p>
         <div id="news">
             <h1>News &amp; Updates</h1>
             <em>2019 March 14</em>

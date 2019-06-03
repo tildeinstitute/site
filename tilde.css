@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans&display=swap');
+
 /* see the tail end of index.html 
  * for license information */
 
 
 body {
         background-color: #000000;
-        font-family: monospace;
-	font: Noto Mono;
+        font-family: 'Open Sans', sans-serif;
         color: green;
         padding-right: 0px;
         margin-top: 10px;
@@ -13,7 +14,7 @@ body {
         margin-right: auto;
         margin-left: auto;
         width: 850px;
-        font-size: 1.15em;
+        font-size: 1.0em;
 }
 .date {
         font-weight: bold;
@@ -21,11 +22,12 @@ body {
 #logo {
 	margin-left: 40px;
 	margin-bottom: 10px;
-	font-size: 2.5em;
+	font-size: 2.2em;
 }
 #logobyline {
 	margin-left: 80px;
 	margin-top: -20px;
+    font-family: 'Source Code Pro', monospace;
 }
 #navigation {
         margin-left: auto;
@@ -46,18 +48,18 @@ body {
     margin-left: 100px;
 }
 #code {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.8em;
     width: 500px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #088a08;
-    color: #000000;
 }
 .code {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.8em;
     width: 500px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #088a08;
-    color: #000000;
 }
 a:link {
 text-decoration: none;
@@ -71,7 +73,6 @@ text-decoration: none;
 
 a:hover {
 color:#ffffff;
-font-weight: bold;
 }
 
 p {
@@ -79,10 +80,8 @@ p {
 }
 code {
     text-indent: 30px;
-    font-family: monospace;
-    font: DejaVu Sans Mono;
-    color: #000000;
-    background-color: #088a08;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.8em;
     padding-left: 4px;
     padding-right: 4px;
 }
