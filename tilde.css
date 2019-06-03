@@ -67,7 +67,7 @@ color:#cccccc;
 }
 
 a:visited {
-color:#088a08;
+color:#cccccc;
 text-decoration: none;
 }
 
@@ -95,13 +95,13 @@ h1 {
     margin-right: auto;
 }
 h2 {
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 h3 {
-	font-size: 1.35em;
-	margin-bottom: 5px;
+	font-size: 1.2em;
+	margin-bottom: -5px;
 }
 h4 {
-    font-size: 1.25em;
+    font-size: 1.1em;
     margin-top: 5px;
 }
