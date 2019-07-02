@@ -19,36 +19,36 @@
         <a href="http://tilde.institute">News</a> :: <a href="/signup">Sign Up</a> :: <a href="/coc">Code of Conduct</a> :: <a rel="me" href="https://tilde.zone/@tildeinstitute">Mastodon</a> :: <a href="https://wiki.tilde.institute">Wiki</a> :: <a href="https://tildegit.org/institute">Git</a> :: <a href="/stats">Stats</a> :: <a href="https://twtxt.tilde.institute">twtxt</a>
 	</div>
 	<div id="content">
-        <p>Welcome to tilde.institute! This is an OpenBSD machine whose purpose is to provide a space in the <a href="https://tildeverse.org">tildeverse</a> for experimentation with and education of the <code>OpenBSD</code> operating system. A variety of editors, shells, and compilers are installed to allow for development in a native <code>OpenBSD</code> environment. OpenBSD's <code>httpd(8)</code> is configured with <code>slowcgi(8)</code> as the fastcgi provider and <code>sqlite3</code> available. This allows users to experiment with web development using compiled <code>CGI</code> in <code>C</code>, aka the <a href="https://learnbchs.org">BCHS Stack</a>. In addition to <code>php7.0</code> and <code>mariadb</code> by request, this provides an environment where the development of complex web apps is possible.</p>
+        <p>Welcome to tilde.institute! This is an OpenBSD machine whose purpose is to provide a space in the <a href="https://tildeverse.org">tildeverse</a> for experimentation with and education of the <code>OpenBSD</code> operating system. A variety of editors, shells, and compilers are installed to allow for development in a native <code>OpenBSD</code> environment. OpenBSD's <code>httpd(8)</code> is configured with <code>slowcgi(8)</code> as the fastcgi provider and <code>sqlite3</code> available. This allows users to experiment with web development using compiled <code>CGI</code> in <code>C</code> (or any statically-linked binary), aka the <a href="https://learnbchs.org">BCHS Stack</a>. In addition to <code>php7.0</code> and <code>mariadb</code> by request, this provides an environment where the development of complex web apps is possible.</p>
         <p>User sites are accessible via <code>https://&lt;user&gt;.tilde.institute</code></p>
         <p>Mailing list now available for tilde.institute! Web archive and <a href="https://lists.tildeverse.org/postorius/lists/institute.lists.tildeverse.org/">subscribing information available here</a>. The mailing list will be the primary means of communication between tilde.institute and users regarding announcements and critical issues.</p>
         <p>The list of compilers available are as follows:</p>
 			<ul>
-                <li><code>gcc</code> 8.3.0</li>
-                <li><code>clang</code> 6.0.0</li>
-                <li><code>jdk</code> 1.8.0</li>
-                <li><code>scala</code> 2.12.3</li>
-                <li><code>rustc</code> 1.29.2</li>
-                <li><code>go</code> 1.11</li>
-                <li><code>elixir</code> 1.7.3</li>
-                <li><code>erlang</code> 19.3</li>
-                <li><code>ghc</code> 8.2.2</li>
-                <li><code>clisp</code> 2.49</li>
-                <li><code>racket</code> 7.0</li>
-                <li><code>guile</code> 1.8.8</li>
-                <li><code>nasm</code> 2.13.03</li>
-                <li><code>yasm</code> 1.3.0</li>
+                <li><code>gcc 8.3.0</code></li>
+                <li><code>clang 6.0.0</code></li>
+                <li><code>jdk 1.8.0</code></li>
+                <li><code>scala 2.12.3</code></li>
+                <li><code>rust 1.29.2</code></li>
+                <li><code>go 1.11</code></li>
+                <li><code>elixir 1.7.3</code></li>
+                <li><code>erlang 19.3</code></li>
+                <li><code>ghc 8.2.2</code></li>
+                <li><code>clisp 2.49</code></li>
+                <li><code>racket 7.0</code></li>
+                <li><code>guile 1.8.8</code></li>
+                <li><code>nasm 2.13.03</code></li>
+                <li><code>yasm 1.3.0</code></li>
 			</ul>
             <p>We also provide non-HTTP access to various interpreted languages:</p>
             <ul>
-                <li><code>python</code> (2.7 &amp; 3.6)</li>
-                <li><code>ruby</code> 2.5</li>
-                <li><code>perl</code> 5.24</li>
-                <li><code>lua</code> 5.3.5</li>
+                <li><code>python (2.7 &amp; 3.6)</code></li>
+                <li><code>ruby 2.5</code></li>
+                <li><code>perl 5.24</code></li>
+                <li><code>lua 5.3.5</code></li>
             </ul>
             <p>Your interactive shell can be changed with the <code>chsh</code> command. The shells available:</p>
             <ul>
-                <li><code>/bin/ksh</code> (default)</li>
+                <li><code>/bin/ksh (default)</code></li>
                 <li><code>/bin/sh</code></li>
                 <li><code>/bin/csh</code></li>
                 <li><code>/usr/local/bin/bash</code></li>
@@ -64,13 +64,15 @@
             <li><code>irssi</code></li>
             <li><code>ircII</code></li>
 		</ul>
-        <p>Feel free to contact the admins via <a href="mailto:admins@tilde.institute">admins@tilde.institute</a> or on chat in #institute if you need another package installed, or if you would like your homepage's index changed from index.html to something else (index.cgi, index.php, etc). We can also provide access to MariaDB by request.</p>
+        <p>Feel free to contact the admins via <a href="mailto:admins@tilde.institute">admins@tilde.institute</a> or on IRC in <code>#institute</code> if you need another package installed, or if you would like your homepage's index changed from <code>index.html</code> to something else (<code>index.cgi</code>, <code>index.php</code>, etc). We can also provide access to <code>MariaDB</code> by request.</p>
         <div id="news">
             <h1>News &amp; Updates</h1>
+            <em>2019 June 06</em>
+            <p>Wow, we've hit 150 users! Also, we'll be upgrading to OpenBSD 6.5 on Monday evening around 10:00 PM US Eastern Time, or 2:00 AM UTC (Tuesday).</p>
             <em>2019 March 14</em>
             <p>Welcome to the team, Kneezle!</p>
             <em>2019 February 25</em>
-            <p>New wiki page, courtesy of ~tomasino! On gophermap management using the burrow tool.</p>
+            <p>New wiki page, courtesy of ~tomasino! On gophermap management using the <code>burrow</code> tool.</p>
             <em>2019 February 24</em>
             <p>We've officially passed the 50 user mark! Woohoo!</p>
             <em>2019 January 04</em>
