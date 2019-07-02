@@ -28,25 +28,26 @@ function isTaken($istaken) {
 }
 function bannedUsers($name) {
     return in_array($name, [
-        'campari', //was selling eggdrop bots
-        'remy', //been trying to get accounts for DoS attacks
+        'abah', //same
+        'abimks', //same
+        'andro', //same
         'blades', //same as remy
-        'ripcode', //same as remy
+        'bullah', //same
+        'campari', //was selling eggdrop bots
+        'derby', //same
+        'hasbullah', //same
+        'janda', //same
         'jundi', // reported by thunix as being part of a botnet
         'larasaty', //same
-        'mom', //same
-        'andro', //same
-        'hasbullah', //same
-        'naruto', //same
-        'pria', //same
-        'abimks', //same
-        'bullah', //same
-        'janda', //same
-        'mks', //same
         'makmur', //same
         'makassar', //same
-        'abah', //same
-        'derby', //same
+        'merc', // reactionary / troll
+        'mks', //same
+        'mom', //same
+        'naruto', //same
+        'pria', //same
+        'remy', //been trying to get accounts for DoS attacks
+        'ripcode', //same as remy
     ]);
 }
 function forbidden_name($name) {
