@@ -44,6 +44,7 @@ function bannedUsers($name) {
         'merc', // reactionary / troll
         'mks', //same
         'mom', //same
+        'mzl', //attempted to infect Wilde with ransomware
         'naruto', //same
         'pria', //same
         'remy', //been trying to get accounts for DoS attacks
