@@ -20,7 +20,7 @@
 	</div>
 	<div id="content">
         <br />
-        <p><code><?php include("table.weekconns"); ?></code> unique users logged in this week (resets Saturdays <code>00:00 UTC</code>)</p>
+        <!--<p><code><?php include("table.weekconns"); ?></code> unique users logged in this week (resets Saturdays <code>00:00 UTC</code>)</p>-->
         <p>Connected Users (<code>5min</code>):</p>
             <?php include("table.connusers"); ?>
         <p>Registered Users (<code>1hr</code>):</p>
