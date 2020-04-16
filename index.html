@@ -77,6 +77,12 @@
         <p>The SSH key fingerprint is: <code>ssh-ed25519 SHA256:3n9E2Y0Kz4YeF776aUQNM+roVICTVQHFs64ekyADQxY</code></p>
         <div id="news">
             <h1>News &amp; Updates</h1>
+            <em>2020 April 16</em>
+            <p>Some old SSH host keys were pruned from the system. A single ed25519 key remains. The fingerprint can be verified just above this news section.
+            I also deployed SSHFP records. If you receive an error related to this when connecting, remove the old host key fingerprint:</p>
+            <p><code>ssh-keygen -R tilde.institute</code></p>
+            <p>Then verify the new fingerprint is correct when prompted upon reconnecting.</p>
+            <br />
             <em>2020 April 14</em>
             <p>Upgraded to OpenBSD 6.6. Everything went smoothly. Enjoy!</p>
             <em>2019 July 30</em>
