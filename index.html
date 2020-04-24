@@ -74,14 +74,14 @@
             <li><code>ircII</code></li>
 		</ul>
         <p>Feel free to contact the admins via <a href="mailto:admins@tilde.institute">admins@tilde.institute</a> or on IRC in <code>#institute</code> if you need another package installed, or if you would like your homepage's index changed from <code>index.html</code> to something else (<code>index.cgi</code>, <code>index.php</code>, etc).</p>
-        <p>The SSH key fingerprint is: <code>ssh-ed25519 SHA256:3n9E2Y0Kz4YeF776aUQNM+roVICTVQHFs64ekyADQxY</code></p>
         <div id="news">
             <h1>News &amp; Updates</h1>
-            <em>2020 April 16</em>
-            <p>Some old SSH host keys were pruned from the system. A single ed25519 key remains. The fingerprint can be verified just above this news section.
-            I also deployed SSHFP records. If you receive an error related to this when connecting, remove the old host key fingerprint:</p>
+            <em>2020 April 17</em>
+            <p>Some ssh host heys were regenerated and I also deployed SSHFP records. If you receive an error related to this when connecting,
+            remove the old host key fingerprint:</p>
             <p><code>ssh-keygen -R tilde.institute</code></p>
-            <p>Then verify the new fingerprint is correct when prompted upon reconnecting.</p>
+            <p>Then connect and tell ssh to check the sshfp records:</p>
+            <p><code>ssh -o "VerifyHostKeyDNS ask" &lt;user&gt;@tilde.institute</code></p>
             <br />
             <em>2020 April 14</em>
             <p>Upgraded to OpenBSD 6.6. Everything went smoothly. Enjoy!</p>
