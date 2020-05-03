@@ -15,7 +15,7 @@
         <div id="front-content">
             <p>Welcome to tilde.institute, a public-access machine in the <a
                     href="https://tildeverse.org">tildeverse</a>. This is a space for people to
-                explore the <code>OpenBSD</code> operating system, in addition to exploring the more social
+                explore the OpenBSD operating system, in addition to exploring the more social
                 aspects of a multi-user UNIX system.</p>
             <p>User sites are accessible via <code>https://&lt;user&gt;.tilde.institute</code></p>
             <p style="margin-top:-1.0rem">A list of user gopherholes is available at
@@ -47,6 +47,12 @@
                     <li><code><a href="https://github.com/getwtxt/getwtxt">getwtxt</a></code></li>
                 </ul>
             </p>
+            <p>IRC clients:</p>
+            <ul>
+                <li><code>weechat</code></li>
+                <li><code>irssi</code></li>
+                <li><code>ircII</code></li>
+            </ul>
             <p>The compilers and interpreters available are:</p>
             <ul>
                 <li><code>brainf*ck 2.7.1</code></li>
@@ -91,12 +97,6 @@
                 <li><code>/usr/local/bin/fish</code></li>
                 <li><code>/usr/local/bin/tcsh</code></li>
                 <li><code>/usr/local/bin/elvish</code></li>
-            </ul>
-            <p>IRC clients:</p>
-            <ul>
-                <li><code>weechat</code></li>
-                <li><code>irssi</code></li>
-                <li><code>ircII</code></li>
             </ul>
             <p>Feel free to contact the admins via <a href="mailto:admins@tilde.institute">admins@tilde.institute</a> or
                 on IRC in <code>#institute</code> if you need another package installed, or if you would like your
