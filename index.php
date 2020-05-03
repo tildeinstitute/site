@@ -13,20 +13,41 @@
     <div id="container">
         <?php include("header.html"); ?>
         <div id="front-content">
-            <p>Welcome to tilde.institute! This is an public-access machine in the <a
-                    href="https://tildeverse.org">tildeverse</a> whose purpose is to provide a space for people to
-                experiment with the <code>OpenBSD</code> operating system. A variety of editors, shells, and compilers
-                are installed to allow for development in a native <code>OpenBSD</code> environment. OpenBSD's
-                <code>httpd(8)</code> is configured with <code>slowcgi(8)</code> as the fastcgi provider and
-                <code>sqlite3</code> is available.</p>
+            <p>Welcome to tilde.institute, a public-access machine in the <a
+                    href="https://tildeverse.org">tildeverse</a>. This is a space for people to
+                explore the <code>OpenBSD</code> operating system, in addition to exploring the more social
+                aspects of a multi-user UNIX system.</p>
             <p>User sites are accessible via <code>https://&lt;user&gt;.tilde.institute</code></p>
-            <p style="margin-top:-1.0rem">A list of user gopher sites is available at
+            <p style="margin-top:-1.0rem">A list of user gopherholes is available at
                 <code>gopher://tilde.institute</code></p>
+            <p style="margin-top:-1.0rem">User git repositories are at <code><a href="https://git.tilde.institute">
+                https://git.tilde.institute</a></code></p>
             <p>The mailing list will be the primary means of communication between tilde.institute admins and users
                 regarding announcements and critical issues. Web archive and <a
                     href="https://lists.tildeverse.org/postorius/lists/institute.lists.tildeverse.org/">subscribing
                     information available here</a>.</p>
-            <p>The list of compilers and interpreters available are as follows:</p>
+            <p>The following services run directly on the server:</p>
+            <p>
+                <ul>
+                    <li><code>cgit</code></li>
+                    <li><code>efingerd</code></li>
+                    <li><code>gophernicus</code></li>
+                    <li><code>httpd(8)</code></li>
+                    <li><code>identd(8)</code></li>
+                    <li><code>php73_fpm</code></li>
+                    <li><code>slowcgi(8)</code></li>
+                    <li><code>smtpd(8)</code></li>
+                    <li><code>unbound(8)</code></li>
+                </ul>
+            </p>
+            <p>The following services run on separate VMs:</p>
+            <p>
+                <ul>
+                    <li><code>inspircd</code></li>
+                    <li><code><a href="https://github.com/getwtxt/getwtxt">getwtxt</a></code></li>
+                </ul>
+            </p>
+            <p>The compilers and interpreters available are:</p>
             <ul>
                 <li><code>brainf*ck 2.7.1</code></li>
                 <li><code>clang 8.0.1</code></li>
@@ -59,7 +80,7 @@
                 <li><code>scala 2.12.3</code></li>
                 <li><code>yasm 1.3.0</code></li>
             </ul>
-            <p>Your interactive shell can be changed with the <code>chsh</code> command. The shells available:</p>
+            <p>Your interactive shell can be changed with the <code>chsh</code> command. Available are:</p>
             <ul>
                 <li><code>/bin/ksh (default)</code></li>
                 <li><code>/bin/sh</code></li>
@@ -71,7 +92,7 @@
                 <li><code>/usr/local/bin/tcsh</code></li>
                 <li><code>/usr/local/bin/elvish</code></li>
             </ul>
-            <p>The IRC clients available by default are:</p>
+            <p>IRC clients:</p>
             <ul>
                 <li><code>weechat</code></li>
                 <li><code>irssi</code></li>
