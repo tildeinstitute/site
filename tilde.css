@@ -1,73 +1,69 @@
 body {
-    background-color: #000000;
+    background-color: #0B173B;
     font-family: sans-serif;
-    /*color: #01df01;*/
-    color: #04b404;
-    padding-right: 0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 850px;
+    color: #ffffff;
+    margin: 0 auto;
+    max-width: 75%;
     font-size: 1.0em;
 }
 .date {
     font-weight: bold;
 }
 #logo {
-    margin-left: 40px;
-    font-size: 2.2em;
-}
-#logobyline {
-    display: none;
-    margin-left: 80px;
-    margin-top: -20px;
+    text-align: center;
     font-family: monospace;
+    font-size: 1em;
 }
 #navigation {
-    margin-left: auto;
-    margin-right: 40px;
-    width: 850px;
+    margin: 0 auto;
     text-align: center;
 }
-#content {
-    width: 750px;
-    margin-left: 50px;
+#navigation table {
+    border: 0px;
+    width: 100%;
 }
-#container {
-    width: 850px;
-    margin-bottom: 100px;
+#navigation td {
+    text-align: center;
+    vertical-align: center;
+    padding: 5px;
+    background-color: #0B3861
+}
+#front-content {
+    max-width: 69%;
+    float: left;
+}
+#content {
+    margin: 0 auto;
 }
 #news {
-    width: 550px;
-    margin-left: 100px;
+    float: right;
+    max-width: 29%;
 }
 #code {
     font-family: monospace;
     font-size: 1.0em;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 500px;
+    margin: 0 auto;
 }
 .code {
     font-family: monospace;
     font-size: 1.0em;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 500px;
+    margin: 0 auto;
 }
 a:link {
-    text-decoration: none;
-    color:#cccccc;
+    text-decoration: underline;
+    color:#ffffff;
 }
 
 a:visited {
-    color:#cccccc;
-    text-decoration: none;
+    color:#ffffff;
+    text-decoration: underline;
 }
 
 a:hover {
-    color:#ffffff;
+    color:#a4a4a4;
+    text-decoration: underline;
 }
 
 p {

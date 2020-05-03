@@ -9,16 +9,8 @@
 </head>
 <body>
 <div id="container">
-	<div id="logo">
-        <img src="logo.png" alt="" /><br />
-		<div id="logobyline">
-			of OpenBSD Education
-		</div>
-	</div>
-	<div id="navigation">
-		<a href="http://tilde.institute">News</a> :: <a href="/signup">Sign Up</a> :: <a href="/coc">Code of Conduct</a> :: <a href="https://tilde.zone/@tildeinstitute">Mastodon</a> :: <a href="https://wiki.tilde.institute">Wiki</a> :: <a href="https://git.tilde.institute/tilde">Git</a> :: <a href="/stats">Stats</a> :: <a href="https://twtxt.tilde.institute">twtxt</a> :: <a href="tilde.json"><code>tilde.json</code></a>
-	</div>
-	<div id="content">
+    <?php include("header.html"); ?>
+	<div id="content" style="text-align: center;">
         <br />
         <!--<p><code><?php include("table.weekconns"); ?></code> unique users logged in this week (resets Saturdays <code>00:00 UTC</code>)</p>-->
         <p>Connected Users (<code>5min</code>):</p>
