@@ -12,36 +12,12 @@
     <?php include("header.html"); ?>
 	<div id="content" style="text-align: center;">
 <?php
+require_once('bannedusers.php');
 
 if ($_SERVER["SERVER_NAME"] != "localhost")
 	require_once "ultimate-email/support/smtp.php";
 function isTaken($istaken) {
     return in_array($istaken, file("userlist", FILE_IGNORE_NEW_LINES));
-}
-function bannedUsers($name) {
-    return in_array($name, [
-        'abah', //same
-        'abimks', //same
-        'andro', //same
-        'blades', //same as remy
-        'bullah', //same
-        'campari', //was selling eggdrop bots
-        'derby', //same
-        'hasbullah', //same
-        'janda', //same
-        'jundi', // reported by thunix as being part of a botnet
-        'larasaty', //same
-        'makmur', //same
-        'makassar', //same
-        'merc', // reactionary / troll
-        'mks', //same
-        'mom', //same
-        'mzl', //attempted to infect Wilde with ransomware
-        'naruto', //same
-        'pria', //same
-        'remy', //been trying to get accounts for DoS attacks
-        'ripcode', //same as remy
-    ]);
 }
 function forbidden_name($name) {
     return in_array($name, [
