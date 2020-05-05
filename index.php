@@ -27,26 +27,22 @@
                     href="https://lists.tildeverse.org/postorius/lists/institute.lists.tildeverse.org/">subscribing
                     information available here</a>.</p>
             <p>The following services run directly on the server:</p>
-            <p>
-                <ul>
-                    <li><code>cgit</code></li>
-                    <li><code>efingerd</code></li>
-                    <li><code>gophernicus</code></li>
-                    <li><code>httpd(8)</code></li>
-                    <li><code>identd(8)</code></li>
-                    <li><code>php73_fpm</code></li>
-                    <li><code>slowcgi(8)</code></li>
-                    <li><code>smtpd(8)</code></li>
-                    <li><code>unbound(8)</code></li>
-                </ul>
-            </p>
+            <ul>
+                <li><code>cgit</code></li>
+                <li><code>efingerd</code></li>
+                <li><code>gophernicus</code></li>
+                <li><code>httpd(8)</code></li>
+                <li><code>identd(8)</code></li>
+                <li><code>php73_fpm</code></li>
+                <li><code>slowcgi(8)</code></li>
+                <li><code>smtpd(8)</code></li>
+                <li><code>unbound(8)</code></li>
+            </ul>
             <p>The following services run on separate VMs:</p>
-            <p>
-                <ul>
-                    <li><code>inspircd</code></li>
-                    <li><code><a href="https://github.com/getwtxt/getwtxt">getwtxt</a></code></li>
-                </ul>
-            </p>
+            <ul>
+                <li><code>inspircd</code></li>
+                <li><code><a href="https://github.com/getwtxt/getwtxt">getwtxt</a></code></li>
+            </ul>
             <p>IRC clients:</p>
             <ul>
                 <li><code>weechat</code></li>
@@ -64,8 +60,7 @@
                 <li><code>erlang 21.2</code></li>
                 <li><code>gcc 8.3.0 (see the <a href="https://wiki.tilde.institute/w/gcc8">wiki page</a>)</code></li>
                 <li><code>gforth 0.7.3</code></li>
-                <li><code>gfortran / g95 8.3.0 (see the <a href="https://wiki.tilde.institute/w/gcc8">wiki page</a>)</code>
-                </li>
+                <li><code>gfortran / g95 8.3.0 (see the <a href="https://wiki.tilde.institute/w/gcc8">wiki page</a>)</code></li>
                 <li><code>ghc 8.6.4</code></li>
                 <li><code>gnat 8.3.0</code></li>
                 <li><code>go 1.13.1</code></li>
