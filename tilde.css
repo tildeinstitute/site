@@ -109,3 +109,19 @@ h4 {
     font-size: 1.1em;
     margin-top: 5px;
 }
+.userlist {
+	text-align: center;
+	margin: 0 auto;
+}
+.userlist ul {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	list-style-type: "\00BB\0020";
+	padding: 0;
+}
+
+.userlist li {
+	white-space: nowrap;
+	flex: 10em;
+}

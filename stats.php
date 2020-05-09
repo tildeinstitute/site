@@ -13,11 +13,11 @@
 	<div id="content">
         <br />
         <!--<p><code><?php include("table.weekconns"); ?></code> unique users logged in this week (resets Saturdays <code>00:00 UTC</code>)</p>-->
-        <div style="max-width: 25%; margin: 0 auto;">
-        <p>Connected Users (<code>5min</code>):</p>
+	<div style="max-width: 25%; margin: 0 auto;">
+        <p style="text-align: center;">Connected Users (<code>5min</code>):</p>
             <?php include("table.connusers"); ?>
         </div>
-        <div style="max-width: 25%; margin: 0 auto;">
+        <div class="userlist">
         <p>Registered Users (<code>1hr</code>):</p>
             <?php include("table.regusers"); ?>
         </div>
