@@ -69,6 +69,7 @@
                 <li><code>lua 5.3.5 and 5.1.5</code></li>
                 <li><code>mono 5.20.1.34</code></li>
                 <li><code>nasm 2.14.02</code></li>
+		<li><code>newlisp 10.7.1</code></li>
                 <li><code>nim 1.0.4</code></li>
                 <li><code>node.js 10.16.3</code></li>
                 <li><code>perl 5.28.2</code></li>
@@ -79,6 +80,8 @@
                 <li><code>ruby 2.5.5 and 2.6.6</code></li>
                 <li><code>rust 1.38</code></li>
                 <li><code>scala 2.12.3</code></li>
+		<li><code>scheme48 1.9.2</code></li>
+		<li><code>tinyscheme 1.41</code></li>
                 <li><code>yasm 1.3.0</code></li>
             </ul>
             <p>Your interactive shell can be changed with the <code>chsh</code> command. Available are:</p>
