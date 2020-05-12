@@ -52,13 +52,16 @@
             <p>The compilers and interpreters available are:</p>
             <ul>
                 <li><code>brainf*ck 2.7.1</code></li>
+		<li><code>chicken 5.1.0</code></li>
                 <li><code>clang 8.0.1</code></li>
                 <li><code>clisp 2.49</code></li>
                 <li><code>clojure 1.10.0.4</code></li>
                 <li><code>crystal 0.30.1</code></li>
                 <li><code>elixir 1.9.1</code></li>
                 <li><code>erlang 21.2</code></li>
+		<li><code>gambit 4.9.3</code></li>
                 <li><code>gcc 8.3.0 (see the <a href="https://wiki.tilde.institute/w/gcc8">wiki page</a>)</code></li>
+		<li><code>gerbil scheme 0.15.1 (see the <a href="https://wiki.tilde.institute/w/gerbilscheme">wiki page</a>)</code></li>
                 <li><code>gforth 0.7.3</code></li>
                 <li><code>gfortran / g95 8.3.0 (see the <a href="https://wiki.tilde.institute/w/gcc8">wiki page</a>)</code></li>
                 <li><code>ghc 8.6.4</code></li>
@@ -80,7 +83,6 @@
                 <li><code>ruby 2.5.5 and 2.6.6</code></li>
                 <li><code>rust 1.38</code></li>
                 <li><code>scala 2.12.3</code></li>
-		<li><code>scheme48 1.9.2</code></li>
 		<li><code>tinyscheme 1.41</code></li>
                 <li><code>yasm 1.3.0</code></li>
             </ul>
