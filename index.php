@@ -28,9 +28,9 @@
                     information available here</a>.</p>
             <p>The following services run directly on the server:</p>
             <ul>
-                <li><code>cgit</code></li>
-                <li><code>efingerd</code></li>
-                <li><code>gophernicus</code></li>
+                <li><code>cgit (<a href="https://wiki.tilde.institute/w/user-repos">wiki</a>)</code></li>
+                <li><code>efingerd (<a href="https://wiki.tilde.institute/w/finger">wiki</a>)</code></li>
+                <li><code>gophernicus (<a href="https://wiki.tilde.institute/w/gopher">wiki</a>)</code></li>
                 <li><code>httpd(8)</code></li>
                 <li><code>identd(8)</code></li>
                 <li><code>php73_fpm</code></li>
@@ -40,8 +40,9 @@
             </ul>
             <p>The following services run on separate VMs:</p>
             <ul>
-                <li><code>inspircd</code></li>
-                <li><code><a href="https://github.com/getwtxt/getwtxt">getwtxt</a></code></li>
+                <li><code>inspircd (<a href="https://wiki.tilde.institute/w/irc">wiki</a>)</code></li>
+                <li><code>getwtxt (<a href="https://twtxt.tilde.institute">instance</a>)</code></li>
+		<li><code>Dungeon Crawl Stone Soup (<a href="https://crawl.tildeverse.org">webtiles</a>, for cli games run `dcss`)</code></li>
             </ul>
             <p>IRC clients:</p>
             <ul>
