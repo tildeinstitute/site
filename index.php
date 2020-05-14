@@ -68,6 +68,7 @@
                 <li><code>gnat 8.3.0</code></li>
                 <li><code>go 1.13.1</code></li>
                 <li><code>guile 1.8.8</code></li>
+		<li><code>janet 1.3.1</code></li>
                 <li><code>jdk 11 and 8 (see the <a href="https://wiki.tilde.institute/w/jdk">wiki page</a>)</code></li>
                 <li><code>lua 5.3.5 and 5.1.5</code></li>
                 <li><code>mono 5.20.1.34</code></li>
