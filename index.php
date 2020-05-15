@@ -101,7 +101,7 @@
 		<li><code>tinyscheme 1.41</code></li>
                 <li><code>yasm 1.3.0</code></li>
             </ul>
-            <p>Your interactive shell can be changed with the <code>chsh</code> command. Available are:</p>
+            <p>The interactive shells available are:</p>
             <ul>
                 <li><code>/bin/ksh (default)</code></li>
                 <li><code>/bin/sh</code></li>
@@ -113,10 +113,8 @@
                 <li><code>/usr/local/bin/tcsh</code></li>
                 <li><code>/usr/local/bin/elvish</code></li>
             </ul>
-            <p>Feel free to contact the admins via <a href="mailto:admins@tilde.institute">admins@tilde.institute</a> or
-                on IRC in <code>#institute</code> if you need another package installed, or if you would like your
-                homepage's index changed from <code>index.html</code> to something else (<code>index.cgi</code>,
-                <code>index.php</code>, etc).</p>
+		<br />
+		<br />
         </div>
         <div id="news">
             <?php include("newsdata.html"); ?>

@@ -65,6 +65,25 @@ body {
     max-width: 500px;
     margin: 0 auto;
 }
+.faq {
+    width: 75%;
+}
+.faq .q {
+    margin-top: 3rem;
+    font-weight: bold;
+    text-decoration: italic;
+    text-indent: 0rem;
+    font-size: 1.2em;
+}
+.faq p {
+    text-indent: 2rem;
+}
+.faq h1 {
+    font-size: 1.75em;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: -1.5rem;
+}
 a:link {
     text-decoration: underline;
     color:#ffffff;
@@ -96,8 +115,6 @@ em {
 h1 {
     font-size: 1.75em;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 h2 {
     font-size: 1.4em;
