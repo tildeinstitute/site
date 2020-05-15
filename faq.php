@@ -38,15 +38,14 @@
 		<p>You won't need to supply a username or password when sending mail via <code>localhost:25</code> this way, since you're already authenticated via SSH.</p>
 
 		<p class="q">Can you whitelist a port for me in the firewall?</p>
-		<p>Sorry, but this presents too much of a security risk on a public-access system. If you'd like, feel free to run something locally. If you want to
-			use it remotely, an ssh tunnel will work.</p>
+		<p>Sorry, but this presents too much of a security risk on a public-access system.</p>
 
 		<p class="q">Are user services allowed?</p>
 		<p>Generally, yes. If you're running something that's using a ton of resources or in some way affecting other users or the general use of the system,
 			then we'll kill it. Just be aware of what you're running and how it may affect the system and other users.</p>
 
 		<p class="q">Are IRC bots allowed?</p>
-		<p>To a degree. There are restrictions on their use on the <code>tilde.chat</code> IRC network. They should not reside in <code>#meta</code>, instead keep
+		<p>Yes, though there are restrictions on their use on the <code>tilde.chat</code> IRC network. They should not reside in <code>#meta</code>, instead keep
 			them in a private channel or in <code>#bots</code>. Bots must also conform to the <a href="https://tildegit.org/tildeverse/rfcs/src/branch/master/rfcs/rfc2.md">bot guidelines listed here</a>.</p>
 		<p>Don't run <code>eggdrop</code> from tilde.institute. There are legitimate uses for <code>eggdrop</code>, but separating the people with some kind
 			of legitimate use from malicious users is tiring. So, no <code>eggdrop</code>.</p>
