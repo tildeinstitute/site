@@ -6,7 +6,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>tilde.institute :: Public-access OpenBSD machine</title>
+    <title>tilde.institute :: Public-access OpenBSD system</title>
     <link rel="stylesheet" href="tilde.css" type="text/css" />
     <link rel="icon" type="image/png" href="icon.png" />
 </head>
@@ -15,10 +15,9 @@
     <div id="container">
         <?php include("header.html"); ?>
         <div id="front-content">
-            <p>Welcome to tilde.institute, a public-access machine in the <a
-                    href="https://tildeverse.org">tildeverse</a>. This is a space for people to
+            <p>Welcome to tilde.institute, a public-access UNIX system running OpenBSD. This is a space for people to
                 explore the OpenBSD operating system, in addition to exploring the more social
-                aspects of a multi-user UNIX system.</p>
+		aspects of a multi-user UNIX system. Gopher and web space, IRC, games, and more are available!</p>
             <p>User sites are accessible via <code>https://&lt;user&gt;.tilde.institute</code></p>
             <p style="margin-top:-1.0rem">A list of user gopherholes is available at
                 <code>gopher://tilde.institute</code></p>
