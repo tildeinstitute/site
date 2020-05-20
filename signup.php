@@ -1,4 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC
+  "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 
 <head>
@@ -12,21 +14,21 @@
 <body>
     <div id="container">
         <?php include("header.html"); ?>
-        <div id="content" style="text-align: center;">
+        <div id="content" class="signup">
             <p>
                 If you haven't received the welcome email within 24 hours, please check your spam folder.
             </p>
             <p>
                 <form action="submit.php">
-                    <h3 style="margin-bottom: 0.5em;">&nbsp;&nbsp;&nbsp;&nbsp;Desired Username:<br /></h3>
-                    <input type="text" size="32" name="username" />
-                    <h3 style="margin-bottom: 0.5em;">&nbsp;&nbsp;&nbsp;&nbsp;Your Email Address:<br /></h3>
-                    <input type="email" size="32" name="email" />
-                    <h3 style="margin-bottom: 0.5em;">&nbsp;&nbsp;&nbsp;&nbsp;What interests you about
+                    <h3>Desired Username:<br /></h3>
+                    <input type="text" size="48" name="username" />
+                    <h3>Your Email Address:<br /></h3>
+                    <input type="email" size="48" name="email" />
+                    <h3>What interests you about
                         tilde.institute?<br /></h3>
-                    <input type="text" size="32" name="interest" />
-                    <h3 style="margin-bottom: 0.5em;">&nbsp;&nbsp;&nbsp;&nbsp;Paste Your SSH Key:<br /></h3>
-                    <input style="margin-bottom: 1.0em;" type="text" size="32" name="sshkey" /><br />
+                    <input type="text" size="48" name="interest" />
+                    <h3>Paste Your SSH Key in OpenSSH Format:<br /></h3>
+                    <input type="text" size="48" name="sshkey" /><br />
                     <input type="submit" value="Submit" />
                 </form>
             </p>

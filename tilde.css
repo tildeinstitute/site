@@ -23,9 +23,9 @@ body {
     width: 100%;
 }
 #navigation td {
+    border-radius: 1.0rem;
     text-align: center;
     vertical-align: center;
-    margin: 5px;
     height: 1.5em;
     background-color: #0B3861;
 }
@@ -56,13 +56,13 @@ body {
 #code {
     font-family: monospace;
     font-size: 1.0em;
-    max-width: 500px;
+    max-width: 75%;
     margin: 0 auto;
 }
 .code {
     font-family: monospace;
     font-size: 1.0em;
-    max-width: 500px;
+    max-width: 50%;
     margin: 0 auto;
 }
 .faq {
@@ -71,7 +71,7 @@ body {
 .faq .q {
     margin-top: 3rem;
     font-weight: bold;
-    text-decoration: italic;
+    font-style: italic;
     text-indent: 0rem;
     font-size: 1.2em;
 }
@@ -103,14 +103,14 @@ p {
     text-indent: 15px;
 }
 code {
-    text-indent: 30px;
+    text-indent: 2rem;
     font-family: monospace;
     font-size: 1.0em;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
 }
 em {
-    font-style: bold;
+    font-weight: bold;
 }
 h1 {
     font-size: 1.75em;
@@ -121,11 +121,10 @@ h2 {
 }
 h3 {
     font-size: 1.2em;
-    margin-bottom: -5px;
 }
 h4 {
     font-size: 1.1em;
-    margin-top: 5px;
+    margin-top: 0.2rem;
 }
 .userlist {
 	text-align: center;
@@ -142,4 +141,21 @@ h4 {
 .userlist li {
 	white-space: nowrap;
 	flex: 10em;
+}
+
+.signup {
+	text-align: center;
+	padding-top: 2rem;
+}
+
+.signup input {
+	margin-bottom: 1.6rem;
+}
+
+.signup h3 {
+	margin: 0.5rem;
+}
+
+.signup p {
+	padding-bottom: 0.3rem;
 }
