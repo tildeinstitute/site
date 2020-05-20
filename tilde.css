@@ -80,7 +80,6 @@ body {
 .faq h1 {
     font-size: 1.75em;
     text-align: center;
-    margin-top: 3rem;
     margin-bottom: -1.5rem;
 }
 a:link {
@@ -144,7 +143,6 @@ h4 {
 
 .signup {
 	text-align: center;
-	padding-top: 2rem;
 }
 
 .signup input {

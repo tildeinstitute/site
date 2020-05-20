@@ -15,6 +15,7 @@
     <div id="container">
         <?php include("header.html"); ?>
         <div id="content" class="signup">
+	    <h1>Request an Account</h1>
             <p>
                 If you haven't received the welcome email within 24 hours, please check your spam folder.
             </p>
