@@ -125,20 +125,24 @@ h4 {
     margin-top: 0.2rem;
 }
 .userlist {
-	text-align: center;
 	margin: 0 auto;
 }
 .userlist ul {
+	list-style-position: inside;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
 	list-style-type: "\00BB\0020";
-	padding: 0;
+	padding-left: 3em;
 }
 
 .userlist li {
 	white-space: nowrap;
 	flex: 10em;
+}
+
+.userlist p {
+	text-align: center;
 }
 
 .signup {
