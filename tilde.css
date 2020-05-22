@@ -25,35 +25,19 @@ pre {
 }
 
 #navigation {
-    margin: 0 auto;
+    line-height: 2.8em;
     text-align: center;
 }
 
-#navigation table {
-    border: 0px;
-    width: 100%;
-}
-
-#navigation td {
-    text-align: center;
-    vertical-align: center;
-    height: 1.5em;
+#navigation a {
+    padding: 0.5em;
+    margin: 0.1em;
+    text-decoration: none;
     background-color: #0B3861;
 }
 
-#navigation td:hover {
+#navigation a:hover {
     background-color: #045fb4;
-}
-
-#navigation td a {
-    display: block;
-    width: 100%;
-    text-decoration: none;
-    min-width: 3.5rem;
-}
-
-#navigation td a:hover {
-    text-decoration: none;
     color: #ffffff;
 }
 
