@@ -64,14 +64,6 @@ body {
     max-width: 29%;
 }
 
-#sshfp {
-	float: left;
-	margin: 0 auto;
-	min-width: 100%;
-	text-align: center;
-	padding-bottom: 3rem;
-}
-
 #code {
     font-family: monospace;
     font-size: 1.0em;
