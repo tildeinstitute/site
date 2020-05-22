@@ -57,18 +57,19 @@ pre {
     color: #ffffff;
 }
 
-#front-content {
-    max-width: 69%;
-    float: left;
-}
-
 #content {
     margin: 0 auto;
 }
 
-#news {
-    float: right;
-    max-width: 29%;
+@media (min-width: 1024px) {
+    #news {
+        float: right;
+        max-width: 29%;
+    }
+    #front-content {
+        max-width: 69%;
+        float: left;
+    }
 }
 
 #sshfp {
