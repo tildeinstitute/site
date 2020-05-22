@@ -54,14 +54,9 @@ pre {
         max-width: 69%;
         float: left;
     }
-}
-
-#sshfp {
-	float: left;
-	margin: 0 auto;
-	min-width: 100%;
-	text-align: center;
-	padding-bottom: 3rem;
+    #sshfp {
+        float: left;
+    }
 }
 
 #code {
