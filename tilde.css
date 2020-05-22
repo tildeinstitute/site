@@ -6,67 +6,90 @@ body {
     max-width: 75%;
     font-size: 1.0em;
 }
+
 .date {
     font-weight: bold;
 }
+
 #logo {
     text-align: center;
     font-family: monospace;
     font-size: 1em;
 }
+
 #navigation {
     margin: 0 auto;
     text-align: center;
 }
+
 #navigation table {
     border: 0px;
     width: 100%;
 }
+
 #navigation td {
     text-align: center;
     vertical-align: center;
     height: 1.5em;
     background-color: #0B3861;
 }
+
 #navigation td:hover {
     background-color: #045fb4;
 }
+
 #navigation td a {
     display: block;
     width: 100%;
     text-decoration: none;
     min-width: 3.5rem;
 }
+
 #navigation td a:hover {
     text-decoration: none;
     color: #ffffff;
 }
+
 #front-content {
     max-width: 69%;
     float: left;
 }
+
 #content {
     margin: 0 auto;
 }
+
 #news {
     float: right;
     max-width: 29%;
 }
+
+#sshfp {
+	float: left;
+	margin: 0 auto;
+	min-width: 100%;
+	text-align: center;
+	padding-bottom: 3rem;
+}
+
 #code {
     font-family: monospace;
     font-size: 1.0em;
     max-width: 75%;
     margin: 0 auto;
 }
+
 .code {
     font-family: monospace;
     font-size: 1.0em;
     max-width: 50%;
     margin: 0 auto;
 }
+
 .faq {
     width: 75%;
 }
+
 .faq .q {
     margin-top: 3rem;
     font-weight: bold;
@@ -74,14 +97,17 @@ body {
     text-indent: 0rem;
     font-size: 1.2em;
 }
+
 .faq p {
     text-indent: 2rem;
 }
+
 .faq h1 {
     font-size: 1.75em;
     text-align: center;
     margin-bottom: -1.5rem;
 }
+
 a:link {
     text-decoration: underline;
     color:#ffffff;
@@ -100,6 +126,7 @@ a:hover {
 p {
     text-indent: 15px;
 }
+
 code {
     text-indent: 2rem;
     font-family: monospace;
@@ -107,26 +134,33 @@ code {
     padding-left: 0.3rem;
     padding-right: 0.3rem;
 }
+
 em {
     font-weight: bold;
 }
+
 h1 {
     font-size: 1.75em;
     text-align: center;
 }
+
 h2 {
     font-size: 1.4em;
 }
+
 h3 {
     font-size: 1.2em;
 }
+
 h4 {
     font-size: 1.1em;
     margin-top: 0.2rem;
 }
+
 .userlist {
 	margin: 0 auto;
 }
+
 .userlist ul {
 	list-style-position: inside;
 	display: flex;

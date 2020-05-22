@@ -119,7 +119,13 @@
         </div>
         <div id="news">
             <?php include("newsdata.html"); ?>
-        </div>
+	</div>
+	<div id="sshfp">
+<code>256 SHA256:QSijnje9WlvxZyIXc5h8uJ2MzPCKbviy0WnBG7U4aP0 (ECDSA)<br />
+256 SHA256:3n9E2Y0Kz4YeF776aUQNM+roVICTVQHFs64ekyADQxY (ED25519)<br />
+3072 SHA256:GsmsdVkfRA8YznxI6EZJW+pf9IntSUIpNfeeGhpIs8w (RSA)<br />
+1024 SHA256:foWYUgDuqfFIKnD2sLgeF1m2l9/ykSLwwlMyLWgesCA (DSA)</code>
+	</div>
     </div>
 </body>
 
