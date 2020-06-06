@@ -3,8 +3,15 @@ body {
     font-family: sans-serif;
     color: #ffffff;
     margin: 0 auto;
-    max-width: 75%;
+    max-width: 90%;
     font-size: 1.0em;
+}
+
+pre {
+    display: block;
+    white-space: pre;
+    word-break: break-all;
+    overflow-x: auto;
 }
 
 .date {
@@ -50,26 +57,25 @@ body {
     color: #ffffff;
 }
 
-#front-content {
-    max-width: 69%;
-    float: left;
-}
-
 #content {
     margin: 0 auto;
 }
 
-#news {
-    float: right;
-    max-width: 29%;
-}
-
-#sshfp {
-	float: left;
-	margin: 0 auto;
-	min-width: 100%;
-	text-align: center;
-	padding-bottom: 3rem;
+@media (min-width: 1024px) {
+    body {
+        max-width: 75%;
+    }
+    #news {
+        float: right;
+        max-width: 29%;
+    }
+    #front-content {
+        max-width: 69%;
+        float: left;
+    }
+    #sshfp {
+        float: left;
+    }
 }
 
 #code {
