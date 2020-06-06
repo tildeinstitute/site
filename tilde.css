@@ -25,13 +25,13 @@ pre {
 }
 
 #navigation {
-    line-height: 2.8em;
+    line-height: 2.4em;
     text-align: center;
 }
 
 #navigation a {
-    padding: 0.5em;
-    margin: 0.1em;
+    padding: 0.36em;
+    margin: -0.05em;
     text-decoration: none;
     background-color: #0B3861;
 }
