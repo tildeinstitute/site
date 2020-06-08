@@ -47,10 +47,11 @@
             </ul>
             <p>IRC clients:</p>
             <ul>
-                <li><code>weechat</code></li>
-                <li><code>irssi</code></li>
+		<li><code>catgirl</code></li>
                 <li><code>ircII</code></li>
+                <li><code>irssi</code></li>
 		<li><code>swirc</code></li>
+                <li><code>weechat</code></li>
             </ul>
             <p>The compilers and interpreters available are:</p>
             <ul>
