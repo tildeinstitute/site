@@ -108,9 +108,9 @@
                 <li>via e-mail at the private addresses listed above.</li>
             </ul>
             <h2>10. License and Attribution</h2>
-            <p>This code of conduct is based on
-                <a href="http://citizencodeofconduct.org/">citizencodeofconduct.org</a> under the
-                terms of the <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+            <p>This code of conduct is based on Citizen Code of Conduct
+                <a href="https://github.com/stumpsyn/policies/">github.com/stumpsyn/policies/</a> under the
+                terms of the <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
                     Attribution-ShareAlike
                     license</a>.</p>
         </div>
