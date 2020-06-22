@@ -25,36 +25,30 @@ pre {
 }
 
 #navigation {
-    margin: 0 auto;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
-#navigation table {
-    border: 0px;
-    width: 100%;
-}
-
-#navigation td {
-    text-align: center;
-    vertical-align: center;
-    height: 1.5em;
+#navigation div {
     background-color: #0B3861;
+    flex-grow: 1;
+    min-width: 3.2rem;
+    padding: .2em;
+    margin: .05em;
+    text-align: center;
 }
 
-#navigation td:hover {
+#navigation div:hover {
     background-color: #045fb4;
 }
 
-#navigation td a {
-    display: block;
-    width: 100%;
+#navigation div a {
+    color: white;
+    text-align: center;
     text-decoration: none;
-    min-width: 3.5rem;
-}
-
-#navigation td a:hover {
-    text-decoration: none;
-    color: #ffffff;
 }
 
 #content {
