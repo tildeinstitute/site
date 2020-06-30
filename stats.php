@@ -12,7 +12,7 @@
 </head>
 <body>
 <div id="container">
-    <?php include("header.html"); ?>
+    <?php include("_header.html"); ?>
     <div id="content">
         <br />
         <!--<p><code><?php include("table.weekconns"); ?></code> unique users logged in this week (resets Saturdays <code>00:00 UTC</code>)</p>-->

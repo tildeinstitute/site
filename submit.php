@@ -11,7 +11,7 @@
 </head>
 <body>
 <div id="container">
-    <?php include("header.html"); ?>
+    <?php include("_header.html"); ?>
 	<div id="content" style="text-align: center;">
 <?php
 require_once('bannedusers.php');

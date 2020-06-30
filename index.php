@@ -15,7 +15,7 @@
 
 <body>
     <div id="container">
-        <?php include("header.html"); ?>
+        <?php include("_header.html"); ?>
         <div id="front-content">
             <p>Welcome to tilde.institute, a public-access UNIX system running OpenBSD. This is a space for people to
                 explore the OpenBSD operating system, in addition to exploring the more social
@@ -122,7 +122,7 @@
 		<br />
         </div>
         <div id="news">
-            <?php include("newsdata.html"); ?>
+            <?php include("_newsdata.html"); ?>
 	</div>
 	<div id="sshfp">
           <pre>

@@ -14,7 +14,7 @@
 
 <body>
     <div id="container">
-        <?php include("header.html"); ?>
+        <?php include("_header.html"); ?>
         <div id="content" class="signup">
 	    <h1>Request an Account</h1>
             <p>

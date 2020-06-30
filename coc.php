@@ -14,7 +14,7 @@
 
 <body>
     <div id="container">
-        <?php include("header.html"); ?>
+        <?php include("_header.html"); ?>
         <div id="content">
             <h1>tilde.institute code of conduct</h1>
             <p><strong>tl;dr</strong>: Be kind to each other. Think carefully about the words you

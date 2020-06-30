@@ -14,7 +14,7 @@
 
 <body>
     <div id="container">
-        <?php include("header.html"); ?>
+        <?php include("_header.html"); ?>
 	<div id="content" class="faq">
 		<h1>FAQ</h1>
 
