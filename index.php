@@ -9,6 +9,8 @@
     <title>tilde.institute :: Public-access OpenBSD system</title>
     <link rel="stylesheet" href="tilde.css" type="text/css" />
     <link rel="icon" type="image/png" href="icon.png" />
+    <link rel="me" href="https://github.com/gbmor" />
+    <?php include("_webmention.html") ?>
 </head>
 
 <body>

@@ -6,9 +6,10 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>tilde.institute :: Sign Up</title>
+    <title>tilde.institute :: FAQ</title>
     <link rel="stylesheet" href="tilde.css" type="text/css" />
     <link rel="icon" type="image/png" href="icon.png" />
+    <?php include("_webmention.html") ?>
 </head>
 
 <body>

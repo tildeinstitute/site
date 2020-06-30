@@ -9,6 +9,7 @@
     <title>tilde.institute :: Code of Conduct</title>
     <link rel="stylesheet" href="tilde.css" type="text/css" />
     <link rel="icon" type="image/png" href="icon.png" />
+    <?php include("_webmention.html") ?>
 </head>
 
 <body>
