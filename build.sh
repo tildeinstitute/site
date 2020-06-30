@@ -12,10 +12,18 @@ build()
 		printf '\n%s %s\n' 'Building:' "$FILENAME"
 
 		if [ "$FILENAME" != 'index.html' ]; then
-			sed '/{{HEADER}}/r inc/_header.html' "$FILE" | sed '/{{HEADER}}/D' | sed '/{{LOGONAV}}/r inc/_logonav.html' | sed '/{{LOGONAV}}/D' > "dist/$FILENAME"
+			sed '/{{HEADER}}/r inc/_header.html' "$FILE" |\
+			sed '/{{HEADER}}/D' |\
+			sed '/{{LOGONAV}}/r inc/_logonav.html' |\
+			sed '/{{LOGONAV}}/D' > "dist/$FILENAME"
 		else
-		    sed '/{{HEADER}}/r inc/_header.html' "$FILE" | sed '/{{HEADER}}/D' | sed '/{{LOGONAV}}/r inc/_logonav.html' | sed '/{{LOGONAV}}/D' | sed '/{{NEWS}}/r inc/_news.html' | sed '/{{NEWS}}/D' > "dist/$FILENAME"
-        fi
+		    sed '/{{HEADER}}/r inc/_header.html' "$FILE" |\
+			sed '/{{HEADER}}/D' |\
+			sed '/{{LOGONAV}}/r inc/_logonav.html' |\
+			sed '/{{LOGONAV}}/D' |\
+			sed '/{{NEWS}}/r inc/_news.html' |\
+			sed '/{{NEWS}}/D' > "dist/$FILENAME"
+		fi
 	done
 
 	cp assets/* dist/
