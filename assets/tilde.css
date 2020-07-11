@@ -46,6 +46,8 @@ pre {
 }
 
 #navigation div a {
+    display: block;
+    width: 100%;
     color: white;
     text-align: center;
     text-decoration: none;
