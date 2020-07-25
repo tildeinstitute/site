@@ -32,10 +32,11 @@
 				(like <code>nmap</code>),
 				then it's probably not a big deal. Either hop on IRC and ask in <code>#institute</code> or send an email
 				to <code>admins@tilde.institute</code></p>
+			<p>If you compile something on your own that you know you shouldn't be running (like a bittorrent client or a
+				cryptocurrency miner), then you can expect to be summarily ejected from the server.</p>
 
 			<p class="q">How do I authenticate with SMTP remotely?</p>
-			<p>Only local access to SMTP is allowed. However, you can use an SSH tunnel on your machine to send mail.
-			</p>
+			<p>Only local access to SMTP is allowed. However, you can use an SSH tunnel on your machine to send mail.</p>
 			<div class="code">ssh -nNTL 25:localhost:25 tilde.institute</div>
 			<p>You won't need to supply a username or password when sending mail via <code>localhost:25</code> this way,
 				since you're already authenticated via SSH.</p>
@@ -47,7 +48,7 @@
 			<p>Generally, yes. If you're running something that's using a ton of resources or in some way affecting
 				other users or the general use of the system,
 				then we'll kill it. Just be aware of what you're running and how it may affect the system and other
-				users.</p>
+				users, and if you think something will be using a bunch of CPU, please <code>renice</code> the process.</p>
 
 			<p class="q">Are IRC bots allowed?</p>
 			<p>Yes, though there are restrictions on their use on the <code>tilde.chat</code> IRC network. They should
