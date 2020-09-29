@@ -109,7 +109,7 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
     if ($message == "") { // no validation errors
 
 	    // remember:
-	    $username = $_REQUEST["username"];
+	    $username = strtolower($_REQUEST["username"]);
 	    $email = $_REQUEST["email"];
 	    $interest = $_REQUEST["interest"];
 	    $sshkey = $_REQUEST["sshkey"];
