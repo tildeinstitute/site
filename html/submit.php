@@ -101,13 +101,8 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
             $message .= "<li>invalid email address. did you mean:  " . htmlspecialchars($result["email"]) . "</li>";
     }
 
-    if ($_REQUEST["sshkey"] == "") {
+    if ($_REQUEST["sshkey"] == "" || substr($_REQUEST["sshkey"], 0, 4) !== "ssh-") {
         $message .= "<li>ssh key required: please create one and submit the public key</li>";
-    }
-
-    if (mb_substr($_REQUEST["sshkey"], 0, 4) !== "ssh-") {
-                $message .= "<li>PUBLIC ssh key required: please create one and submit the public key</li>";
-                    
     }
 
 
