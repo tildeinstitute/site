@@ -107,7 +107,7 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
 
     if (mb_substr($_REQUEST["sshkey"], 0, 4) !== "ssh-") {
                 $message .= "<li>PUBLIC ssh key required: please create one and submit the public key</li>";
-                    }
+                    
     }
 
 
