@@ -117,8 +117,14 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"])) {
         $newuserfile = fopen("newusers.dat", "a");
 	    fwrite($newuserfile, "$username $email \"$sshkey\"\n\n");
 	    fclose($newuserfile);
+
+	$http_client_ip = $_SERVER['HTTP_CLIENT_IP'];
+	$x_fwd_for = $_SERVER['HTTP_X_FORWARDED_FOR'];
+	$r_addr = $_SERVER['REMOTE_ADDR'];
+	$remote_ip = (!empty($http_client_ip)) ? $http_client_ip : (!empty($x_fwd_for)) ? $x_fwd_for : (!empty($r_addr)) ? $r_addr : "unknown_ip";
+
         $fuzzyfile = fopen("fuzzies.log", "a");
-        fwrite($fuzzyfile, "$username   $email  $interest\n");
+        fwrite($fuzzyfile, "$username   $email  $interest	:: $remote_ip\n");
         fclose($fuzzyfile);
 ?>
 

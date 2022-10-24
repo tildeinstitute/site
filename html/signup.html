@@ -7,34 +7,31 @@
 </head>
 
 <body>
-    <div id="container">
-        {{LOGONAV}}
-        <div id="content" class="signup">
-            <h1>Request an Account</h1>
-            <p>
-                If you haven't received the welcome email within 24 hours, please check your spam folder. If you use <code>icloud.com</code> for mail, our welcome email will be rejected, so keep an eye on our fediverse account (navigation bar) to see when your user is added.
-	    </p>
-	    <p>
-	        Your email address is only used to send you a welcome email.
-            </p>
-            <p>
-            <form action="submit.php">
-                <h3>Desired Username:<br /></h3>
-                <input type="text" size="48" name="username" />
-                <h3>Your Email Address:<br /></h3>
-                <input type="email" size="48" name="email" />
-                <h3>What interests you about
-                    tilde.institute?<br /></h3>
-                <input type="text" size="48" name="interest" />
-                <h3>Paste Your SSH Public Key in OpenSSH Format:<br /></h3>
-                <input type="text" size="48" name="sshkey" /><br />
-		You must be at least 13 years old to use this system.<br />
-		<br />
-                <input type="submit" value="Submit" />
-            </form>
-            </p>
-        </div>
+<div id="container">
+    {{LOGONAV}}
+    <div id="content" class="signup">
+        <h1>Joining</h1>
+        <p>
+            Please join the IRC network and hang out for a while. You'll be able to request an account from there.
+        </p>
+        <p>
+            Connection details:
+        </p>
+        <ul>
+            <li><code>institute.tilde.chat</code></li>
+            <li>Port 6697</li>
+            <li>TLS required</li>
+        </ul>
+        <p>
+            Channels of note:
+        </p>
+        <ul>
+            <li><code>#institute</code></li>
+            <li><code>#meta</code> (network-wide general chat)</li>
+            <li><code>#helpdesk</code> (network-specific help)</li>
+        </ul>
     </div>
+</div>
 </body>
 
 </html>
